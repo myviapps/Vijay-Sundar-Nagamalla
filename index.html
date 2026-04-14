@@ -1171,30 +1171,19 @@
         <div class="hcc-dots">
           <span></span><span></span><span></span>
         </div>
-        <div class="hcc-line"><span class="hcc-c5">class</span> <span class="hcc-c2">PropIQAgent</span><span
-            class="hcc-c4">:</span></div>
-        <div class="hcc-line">&nbsp;&nbsp;<span class="hcc-c5">def</span> <span class="hcc-c2">analyze_loan</span><span
-            class="hcc-c4">(</span><span class="hcc-c1">self</span><span class="hcc-c4">, doc):</span></div>
-        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c1">chunks</span> <span class="hcc-c4">=</span>
-          <span class="hcc-c2">rag_pipeline</span><span class="hcc-c4">(</span><span class="hcc-c1">doc</span><span
-            class="hcc-c4">)</span>
-        </div>
-        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c1">risk</span> <span class="hcc-c4">=</span>
-          <span class="hcc-c2">xgboost_score</span><span class="hcc-c4">(</span><span class="hcc-c1">chunks</span><span
-            class="hcc-c4">)</span>
-        </div>
-        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c5">return</span> <span
-            class="hcc-c2">mcp_tools</span><span class="hcc-c4">.</span><span class="hcc-c2">route</span><span
-            class="hcc-c4">(</span></div>
-        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c3">"HIGH"</span> <span
-            class="hcc-c5">if</span> <span class="hcc-c1">risk</span> <span class="hcc-c4">&gt;</span> <span
-            class="hcc-c3">0.7</span> <span class="hcc-c5">else</span> <span class="hcc-c3">"OK"</span></div>
-        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c4">)</span></div>
+        <div class="hcc-line"><span class="hcc-c5">from</span> <span class="hcc-c1">mcp</span> <span class="hcc-c5">import</span> <span class="hcc-c2">Agent</span><span class="hcc-c4">,</span> <span class="hcc-c2">tools</span></div>
         <br />
-        <div class="hcc-line"><span class="hcc-c4"># WAT Framework active ✓</span></div>
-        <div class="hcc-line"><span class="hcc-c2">agent</span><span class="hcc-c4">.</span><span
-            class="hcc-c2">run</span><span class="hcc-c4">(</span><span class="hcc-c3">"analyze Q3 loans"</span><span
-            class="hcc-c4">)</span></div>
+        <div class="hcc-line"><span class="hcc-c5">@</span><span class="hcc-c1">agent.route</span><span class="hcc-c4">(</span><span class="hcc-c3">"analyze_data"</span><span class="hcc-c4">)</span></div>
+        <div class="hcc-line"><span class="hcc-c5">async def</span> <span class="hcc-c2">analyze</span><span class="hcc-c4">(</span><span class="hcc-c1">doc_id: str</span><span class="hcc-c4">):</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c1">ctx</span> <span class="hcc-c4">=</span> <span class="hcc-c5">await</span> <span class="hcc-c2">rag_pipe.fetch</span><span class="hcc-c4">(</span><span class="hcc-c1">doc_id</span><span class="hcc-c4">)</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c1">risk</span> <span class="hcc-c4">=</span> <span class="hcc-c2">model.predict</span><span class="hcc-c4">(</span><span class="hcc-c1">ctx</span><span class="hcc-c4">)</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c5">return</span> <span class="hcc-c4">{</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c3">"status"</span><span class="hcc-c4">:</span> <span class="hcc-c3">"HIGH RISK"</span> <span class="hcc-c5">if</span> <span class="hcc-c1">risk</span> <span class="hcc-c4">&gt;</span> <span class="hcc-c3">0.7</span> <span class="hcc-c5">else</span> <span class="hcc-c3">"OK"</span><span class="hcc-c4">,</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c3">"action"</span><span class="hcc-c4">:</span> <span class="hcc-c2">tools.flag_review</span><span class="hcc-c4">()</span></div>
+        <div class="hcc-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hcc-c4">}</span></div>
+        <br />
+        <div class="hcc-line"><span class="hcc-c4"># Deployment ready 🚀</span></div>
+        <div class="hcc-line"><span class="hcc-c2">agent.deploy</span><span class="hcc-c4">(</span><span class="hcc-c1">port</span><span class="hcc-c4">=</span><span class="hcc-c3">8080</span><span class="hcc-c4">)</span></div>
       </div>
     </div>
   </div>

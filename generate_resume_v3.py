@@ -64,7 +64,7 @@ story.append(Paragraph(
     '+91 9391122607  \u00b7  <link href="mailto:vijaysundarn@gmail.com" color="#0f3460">vijaysundarn@gmail.com</link>'
     '  \u00b7  <link href="https://linkedin.com/in/vijaysundarn" color="#0f3460">LinkedIn</link>', contact_s))
 story.append(Paragraph(
-    '<link href="https://vijaysundarnagamalla.vercel.app" color="#0f3460">vijaysundarnagamalla.vercel.app</link>'
+    '<link href="https://myviapps.github.io/Vijay-Sundar-Nagamalla/" color="#0f3460">myviapps.github.io/Vijay-Sundar-Nagamalla</link>'
     '  \u00b7  Portfolio &amp; Profile', link_s))
 story.append(Paragraph(
     "AI Application Developer  \u00b7  Full Stack Engineer  \u00b7  Agentic Systems Architect", tag_s))
