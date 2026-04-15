@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const NAV_SECTIONS = ['skills', 'projects', 'experience', 'contact'];
 
-export default function Navbar({ darkMode, toggleDark }) {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [scrolled, setScrolled] = useState(false);
@@ -55,14 +55,6 @@ export default function Navbar({ darkMode, toggleDark }) {
             >
               Hire Me
             </a>
-            <button
-              className="dark-toggle"
-              onClick={toggleDark}
-              aria-label="Toggle dark mode"
-              title={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-            >
-              {darkMode ? '☀️' : '🌙'}
-            </button>
           </div>
 
           {/* Hamburger */}
@@ -87,9 +79,6 @@ export default function Navbar({ darkMode, toggleDark }) {
         <a href="mailto:vijaysundarn@gmail.com" className="nav-hire" onClick={closeMenu}>
           Hire Me
         </a>
-        <button className="dark-toggle" onClick={toggleDark} style={{ alignSelf: 'flex-start' }}>
-          {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-        </button>
       </div>
     </>
   );

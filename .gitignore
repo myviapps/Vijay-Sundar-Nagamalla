@@ -24,6 +24,10 @@ build/
 *.sln
 *.sw?
 
+# AI / Agent tools
+.claude/
+.playwright-mcp/
+
 # OS
 .DS_Store
 Thumbs.db

@@ -23,7 +23,7 @@ export const experience = [
     bullets: [
       'Architected 5 production AI + full-stack platforms from design to deployment',
       'Engineered RAG pipelines, MCP agents, and the WAT agentic orchestration framework',
-      'Trained 3,000+ engineers — 30% avg improvement in assessment outcomes',
+      'Trained 15,000+ learners across 40+ colleges — 30% avg improvement in assessment outcomes',
       '95%+ data accuracy across LMS systems; 30% improvement in program completion rates',
     ],
   },
@@ -143,6 +143,24 @@ export const projects = [
     ],
     link: '#',
   },
+  {
+    id: 6,
+    color: 'purple',
+    filter: ['saas'],
+    badge: '🎨 Developer Portfolio',
+    status: 'deployed',
+    statusLabel: 'Deployed',
+    title: 'Personal Portfolio — vijaysundar.dev',
+    stack: 'React 18 · Vite · Vanilla CSS · Vercel',
+    impact: 'Responsive developer portfolio with scroll animations & dynamic data',
+    bullets: [
+      'Component-driven architecture with data-driven rendering',
+      'Auto-calculated stats: years of experience, project counts',
+      'Typewriter effect, intersection observer animations, animated counters',
+      'SEO-optimized, mobile-first, Vercel-deployed',
+    ],
+    link: '#',
+  },
 ];
 
 // ─── SKILLS DATA ──────────────────────────────────────────────────────────────
@@ -175,8 +193,8 @@ export const skills = [
   },
   {
     icon: '📊',
-    title: 'Reporting & Ops',
-    pills: ['Power BI', 'Google Sheets API', 'MS Excel', 'LMS'],
+    title: 'Training & Ops',
+    pills: ['Technical Training', 'Power BI', 'Google Sheets API', 'MS Excel', 'LMS'],
   },
 ];
 
@@ -188,17 +206,22 @@ export const profile = {
   phone: '+91 9391122607',
   resumePdf: '/Vijay_Sundar_Nagamalla_Resume.pdf',
   heroImage: '/images/ai_trainer_hero_isometric-Photoroom.png',
-  typedPhrases: ['AI Developer', 'Full-Stack Engineer', 'RAG Architect', 'Agentic AI Builder'],
-  availabilityBadge: 'Open to AI Developer Roles',
-  headline1: 'Hi, I am',
+  typedPhrases: [
+    'Technical Trainer — 15K+ Learners',
+    'Self-Taught AI Developer',
+    'RAG & Agentic AI Architect',
+    'Full-Stack Engineer',
+  ],
+  availabilityBadge: 'Open to AI & Training Roles',
+  headline1: "Hi, I'm",
   headlineGrad: 'Vijay Sundar Nagamalla',
-  headline2: 'Building Production AI Systems',
+  headline2: 'Educator & Self-Taught AI Developer',
   description:
-    'Full-stack AI engineer & veteran technical trainer. Architect of RAG pipelines, MCP tool-calling agents, and agentic frameworks across FinTech, EdTech, and enterprise SaaS domains.',
-  tags: ['RAG Pipelines', 'MCP Tool Calling', 'LangChain', 'React 19', 'FastAPI', 'Agentic AI', 'Docker', 'PostgreSQL', 'Next.js'],
-  contactCta: "Let's Build Something Intelligent",
+    'From classroom to codebase — I trained 15,000+ learners in programming fundamentals, then taught myself to build production AI systems. Now I architect RAG pipelines, MCP tool-calling agents, and agentic frameworks across FinTech, EdTech, and enterprise SaaS.',
+  tags: ['Technical Training', 'RAG Pipelines', 'MCP Tool Calling', 'LangChain', 'React 19', 'FastAPI', 'Agentic AI', 'Docker', 'PostgreSQL'],
+  contactCta: "Let's Build Something Together",
   contactDesc:
-    'Open to AI Developer, Full Stack, and Applied AI roles — especially in FinTech, EdTech, and SaaS domains.',
+    'Open to AI Developer, Full-Stack, Technical Training, and Applied AI roles — especially in FinTech, EdTech, and SaaS domains.',
 };
 
 // ─── AUTO-CALCULATED STATS ────────────────────────────────────────────────────
@@ -210,16 +233,14 @@ const earliestStart = experience.reduce((earliest, job) => {
 }, new Date());
 
 const totalYears = calcYears(earliestStart.toISOString().split('T')[0]);
-const deployedCount = projects.filter(p => p.status === 'deployed').length;
 const productionCount = projects.length;
-const toolsCount = projects.find(p => p.title.includes('UtilKit'))?.bullets
-  ? 63  // override: explicit count from UtilKit project
-  : projects.length;
+const toolsCount = 63; // explicit count from UtilKit project
 
 export const stats = [
-  { value: totalYears,  suffix: '+', label: 'Years Experience',       isFloat: true },
-  { value: 3000,        suffix: '+', label: 'Developers Trained',     isFloat: false },
+  { value: totalYears,      suffix: '+', label: 'Years Experience',       isFloat: true },
+  { value: 15000,           suffix: '+', label: 'Learners Trained',       isFloat: false },
+  { value: 40,              suffix: '+', label: 'Colleges',               isFloat: false },
   { value: productionCount, suffix: '',  label: 'Production Platforms',   isFloat: false },
-  { value: 30,          suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
-  { value: toolsCount,  suffix: '+', label: 'Tools Built (UtilKit)',   isFloat: false },
+  { value: 30,              suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
+  { value: toolsCount,      suffix: '+', label: 'Tools Built (UtilKit)',   isFloat: false },
 ];
