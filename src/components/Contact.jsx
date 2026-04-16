@@ -1,16 +1,39 @@
 import { useRef } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { 
+  Mail, 
+  Phone, 
+  MessageCircle, 
+  FileText, 
+  Calendar 
+} from 'lucide-react';
+
+// Custom Brand Icons (Lucide-style)
+const GithubIcon = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+  </svg>
+);
+
+const LinkedinIcon = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 
 export default function Contact({ profile }) {
   const ref = useRef(null);
   const visible = useIntersectionObserver(ref, { threshold: 0.2 });
 
   const links = [
-    { href: profile.linkedin, label: '🔗 LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
-    { href: `mailto:${profile.email}`, label: '✉️ Email' },
-    { href: `tel:${profile.phone.replace(/\s/g, '')}`, label: '📞 Phone' },
-    { href: `https://wa.me/${profile.phone.replace(/\D/g, '')}`, label: '💬 WhatsApp', target: '_blank', rel: 'noopener noreferrer' },
-    { href: profile.resumePdf, label: '📄 Download Resume', download: true },
+    { href: profile.linkedin, label: 'LinkedIn', icon: <LinkedinIcon />, target: '_blank', rel: 'noopener noreferrer' },
+    { href: profile.github, label: 'GitHub', icon: <GithubIcon />, target: '_blank', rel: 'noopener noreferrer' },
+    { href: `mailto:${profile.email}`, label: 'Email', icon: <Mail size={18} /> },
+    { href: `tel:${profile.phone.replace(/\s/g, '')}`, label: 'Phone', icon: <Phone size={18} /> },
+    { href: `https://wa.me/${profile.phone.replace(/\D/g, '')}`, label: 'WhatsApp', icon: <MessageCircle size={18} />, target: '_blank', rel: 'noopener noreferrer' },
+    { href: profile.resumePdf, label: 'Download Resume', icon: <FileText size={18} />, download: true },
   ];
 
   return (
@@ -26,17 +49,19 @@ export default function Contact({ profile }) {
               data-cal-link="vijay-sundar-nagumalla"
               data-cal-config='{"layout":"month_view"}'
             >
-              📅 Grab a Slot
+              <Calendar size={18} />
+              Grab a Slot
             </button>
-            {links.map((link) => (
+            {links.map((link, idx) => (
               <a
-                key={link.href}
+                key={idx}
                 className="contact-link"
                 href={link.href}
                 download={link.download || undefined}
                 target={link.target || undefined}
                 rel={link.rel || undefined}
               >
+                {link.icon}
                 {link.label}
               </a>
             ))}

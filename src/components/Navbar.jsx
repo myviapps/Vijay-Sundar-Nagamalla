@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Calendar } from 'lucide-react';
 
 const NAV_SECTIONS = ['skills', 'projects', 'experience', 'contact'];
 
@@ -54,6 +55,7 @@ export default function Navbar({ profile }) {
               data-cal-config='{"layout":"month_view"}'
               className="nav-hire"
             >
+              <Calendar size={16} />
               Grab a Slot
             </button>
           </div>
@@ -82,6 +84,7 @@ export default function Navbar({ profile }) {
           className="nav-hire" 
           onClick={closeMenu}
         >
+          <Calendar size={16} />
           Grab a Slot
         </button>
       </div>

@@ -3,8 +3,9 @@ export default function Footer({ profile }) {
   return (
     <footer>
       <p>
-        © {year} {profile.name} · Educator & Self-Taught AI Developer ·{' '}
-        <a href={`mailto:${profile.email}`}>{profile.email}</a>
+        © {year} {profile.name} · Educator & AI Developer ·{' '}
+        <a href={profile.github} target="_blank" rel="noopener noreferrer">GitHub</a> ·{' '}
+        <a href={`mailto:${profile.email}`}>Email</a>
       </p>
     </footer>
   );

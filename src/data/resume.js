@@ -202,6 +202,7 @@ export const profile = {
   email: 'vijaysundarn@gmail.com',
   phone: '+91 9391122607',
   linkedin: 'https://www.linkedin.com/in/vijaysundarn/',
+  github: 'https://github.com/myviapps',
   calLink: 'https://cal.com/vijay-sundar-nagumalla',
   resumePdf: '/Vijay_Sundar_Nagamalla_Resume.pdf',
   heroImage: '/images/ai_trainer_hero_isometric-Photoroom.png',
