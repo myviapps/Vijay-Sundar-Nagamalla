@@ -32,14 +32,16 @@ function ProjectCard({ proj, visible, idx }) {
       </ul>
 
       <div className="proj-footer">
-        <a
-          className="proj-link"
-          href={proj.link}
-          target={proj.link === '#' ? undefined : '_blank'}
-          rel="noreferrer"
-        >
-          View Project →
-        </a>
+        {proj.status === 'deployed' && (
+          <a
+            className="proj-link"
+            href={proj.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project →
+          </a>
+        )}
       </div>
     </div>
   );
