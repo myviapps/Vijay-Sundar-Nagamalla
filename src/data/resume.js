@@ -218,7 +218,7 @@ export const profile = {
   headlineGrad: 'Vijay Sundar Nagamalla',
   headline2: 'Educator & AI Developer',
   description:
-    'Veteran L&D professional with 7.5+ years of experience delivering and operating high-scale technical training programs. I have mentored 50,000+ learners in core programming (C, Java, Python, SQL, DSA) while simultaneously evolving as an AI Developer, architecting production-grade RAG pipelines and agentic frameworks.',
+    'Veteran L&D professional with 8+ years of experience delivering and operating high-scale technical training programs. I have mentored 50,000+ learners in core programming (C, Java, Python, SQL, DSA) while simultaneously evolving as an AI Developer, architecting production-grade RAG pipelines and agentic frameworks.',
   tags: ['Technical Training', 'RAG Pipelines', 'MCP Tool Calling', 'LangChain', 'React 19', 'FastAPI', 'Agentic AI', 'Docker', 'PostgreSQL'],
   navbarCta: 'Book a Call',
   contactCta: "Let's Build Something Together",
