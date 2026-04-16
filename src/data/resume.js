@@ -18,14 +18,14 @@ export const experience = [
     id: 1,
     startDate: '2020-05-01',
     endDate: 'Present',
-    title: 'Senior Technical Trainer / AI Developer',
+    title: 'Senior Technical Trainer & Learning Operations / AI Developer',
     company: 'Freelance',
     bullets: [
       'Architected and deployed 5+ end-to-end AI and full-stack platforms, specializing in RAG pipelines, MCP agents, and the WAT orchestration framework',
-      'Delivered advanced technical training in Java, Python, SQL, and Data Structures to 15,000+ learners across 40+ institutions, driving ~50% average assessment improvement',
-      'Managed the complete learning lifecycle: designing syllabus/labs, conducting assessments, and providing career readiness mentoring',
-      'Optimized learning operations and enrollment data across multiple batches with 95%+ accuracy, ensuring smooth program execution',
-      'Engineered automated reporting tools and LMS data pipelines to monitor real-time learner progress and improve completion rates',
+      'Delivered high-impact technical training in Java, Python, SQL, and DSA to 25,000+ learners, achieving ~50% average assessment improvement',
+      'Managed end-to-end learning operations: from multi-track session scheduling and batch planning to learner enrollment and attendance tracking',
+      'Partnered with instructional designers and stakeholders to ensure seamless program execution and on-time delivery of learning modules',
+      'Leveraged MS Excel and Power BI to track real-time KPIs, monitor learner completion rates, and maintain operational data with 95%+ accuracy',
     ],
   },
   {
@@ -208,7 +208,7 @@ export const profile = {
   resumePdf: '/Vijay_Sundar_Nagamalla_Resume.pdf',
   heroImage: '/images/ai_trainer_hero_isometric-Photoroom.png',
   typedPhrases: [
-    'Technical Trainer — 15K+ Learners',
+    'Senior Technical Trainer & Learning Operations',
     'Self-Taught AI Developer',
     'RAG & Agentic AI Architect',
     'Full-Stack Engineer',
@@ -218,7 +218,7 @@ export const profile = {
   headlineGrad: 'Vijay Sundar Nagamalla',
   headline2: 'Educator & Self-Taught AI Developer',
   description:
-    'From classroom to codebase — I trained 15,000+ learners in programming fundamentals, then taught myself to build production AI systems. Now I architect RAG pipelines, MCP tool-calling agents, and agentic frameworks across FinTech, EdTech, and enterprise SaaS.',
+    'Veteran L&D professional with 7.5+ years of experience delivering and operating high-scale technical training programs. I have mentored 50,000+ learners in core programming (C, Java, Python, SQL, DSA) while simultaneously evolving as a self-taught AI Developer, architecting production-grade RAG pipelines and agentic frameworks.',
   tags: ['Technical Training', 'RAG Pipelines', 'MCP Tool Calling', 'LangChain', 'React 19', 'FastAPI', 'Agentic AI', 'Docker', 'PostgreSQL'],
   navbarCta: 'Book a Call',
   contactCta: "Let's Build Something Together",
@@ -240,7 +240,7 @@ const toolsCount = 63; // explicit count from UtilKit project
 
 export const stats = [
   { value: totalYears, suffix: '+', label: 'Years Experience', isFloat: true },
-  { value: 15000, suffix: '+', label: 'Learners Trained', isFloat: false },
+  { value: 50000, suffix: '+', label: 'Learners Trained', isFloat: false },
   { value: 40, suffix: '+', label: 'Colleges', isFloat: false },
   { value: productionCount, suffix: '', label: 'Production Platforms', isFloat: false },
   { value: 30, suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
