@@ -16,15 +16,16 @@ function calcYears(startDate) {
 export const experience = [
   {
     id: 1,
-    startDate: '2021-05-01',   // ← change these dates → stats auto-update
+    startDate: '2021-05-01',
     endDate: 'Present',
     title: 'Senior Technical Trainer / AI Developer',
     company: 'Freelance',
     bullets: [
-      'Architected 5 production AI + full-stack platforms from design to deployment',
-      'Engineered RAG pipelines, MCP agents, and the WAT agentic orchestration framework',
-      'Trained 15,000+ learners across 40+ colleges — 50% avg improvement in assessment outcomes',
-      '95%+ data accuracy across LMS systems; 30% improvement in program completion rates',
+      'Architected and deployed 5+ end-to-end AI and full-stack platforms, handling system design, backend development, and production rollout',
+      'Engineered scalable RAG pipelines, MCP-based agents, and the WAT agentic orchestration framework for real-world automation use cases',
+      'Delivered training to 15,000+ learners across 40+ institutions, driving ~50% average improvement in assessment performance',
+      'Optimized LMS data pipelines and reporting systems, achieving 95%+ data accuracy and improving program completion rates by 30%',
+      'Mentored students and professionals in AI, full-stack development, and system design, enabling industry-ready project delivery',
     ],
   },
   {
@@ -34,20 +35,22 @@ export const experience = [
     title: 'Technical Project Manager',
     company: 'Xplore.co.in',
     bullets: [
-      'Led concurrent training programs as Lead Trainer — 100% on-time delivery',
-      'Built Power BI dashboards for executive-level KPI reporting',
-      'Owned training calendars, batch planning, and stakeholder coordination',
+      'Led multiple concurrent training programs as Lead Trainer and Project Owner, ensuring 100% on-time delivery with consistent quality outcomes',
+      'Built and maintained Power BI dashboards for leadership, enabling real-time visibility into KPIs, learner performance, and program health',
+      'Managed end-to-end program operations including batch planning, scheduling, and cross-functional stakeholder coordination',
+      'Streamlined training workflows and operational processes, reducing delivery bottlenecks and improving overall efficiency',
     ],
   },
   {
     id: 3,
-    startDate: '2018-06-01',   // ← earliest date → drives totalYearsExperience
+    startDate: '2018-06-19',
     endDate: '2021-05-01',
     title: 'Associate Trainer',
     company: 'FACE',
     bullets: [
-      'Delivered Java, Python, and SQL instruction to 80+ learners per batch',
-      'Managed full session lifecycle: onboarding, attendance, feedback analysis',
+      'Delivered Aptitude (Quantitative and Logical Reasoning), C, Java, Python, and SQL training to batches of 80+ learners',
+      'Managed the complete training lifecycle including onboarding, attendance tracking, assessments, and feedback analysis',
+      'Improved student outcomes through structured problem-solving methodologies and personalized learning support',
     ],
   },
 ];
@@ -240,10 +243,10 @@ const productionCount = projects.length;
 const toolsCount = 63; // explicit count from UtilKit project
 
 export const stats = [
-  { value: totalYears,      suffix: '+', label: 'Years Experience',       isFloat: true },
-  { value: 15000,           suffix: '+', label: 'Learners Trained',       isFloat: false },
-  { value: 40,              suffix: '+', label: 'Colleges',               isFloat: false },
-  { value: productionCount, suffix: '',  label: 'Production Platforms',   isFloat: false },
-  { value: 50,              suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
-  { value: toolsCount,      suffix: '+', label: 'Tools Built (UtilKit)',   isFloat: false },
+  { value: totalYears, suffix: '+', label: 'Years Experience', isFloat: true },
+  { value: 15000, suffix: '+', label: 'Learners Trained', isFloat: false },
+  { value: 40, suffix: '+', label: 'Colleges', isFloat: false },
+  { value: productionCount, suffix: '', label: 'Production Platforms', isFloat: false },
+  { value: 30, suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
+  { value: toolsCount, suffix: '+', label: 'Tools Built (UtilKit)', isFloat: false },
 ];

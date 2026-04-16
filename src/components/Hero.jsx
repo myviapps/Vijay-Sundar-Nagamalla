@@ -54,7 +54,7 @@ export default function Hero({ profile }) {
       </div>
 
       <div className="hero-scroll-indicator">
-        <span>Scroll</span>
+
         <div className="arrow" />
       </div>
     </div>
