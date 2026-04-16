@@ -243,6 +243,6 @@ export const stats = [
   { value: 50000, suffix: '+', label: 'Learners Trained', isFloat: false },
   { value: 40, suffix: '+', label: 'Colleges', isFloat: false },
   { value: productionCount, suffix: '', label: 'Production Platforms', isFloat: false },
-  { value: 30, suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
+  { value: 50, suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
   { value: toolsCount, suffix: '+', label: 'Tools Built (UtilKit)', isFloat: false },
 ];
