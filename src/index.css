@@ -266,16 +266,7 @@ nav.nav-scrolled {
   letter-spacing: -2px;
   margin-bottom: 1.5rem;
   padding-bottom: 0.15em;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 50%, var(--teal) 100%);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 6s ease infinite;
-}
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  color: var(--text);
 }
 
 .hero-subtitle {

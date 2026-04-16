@@ -27,6 +27,7 @@ build/
 # AI / Agent tools
 .claude/
 .playwright-mcp/
+.superpowers/
 
 # OS
 .DS_Store

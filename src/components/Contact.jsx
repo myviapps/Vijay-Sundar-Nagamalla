@@ -7,8 +7,9 @@ export default function Contact({ profile }) {
 
   const links = [
     { href: profile.linkedin, label: '🔗 LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
-    { href: `mailto:${profile.email}`, label: `✉️ ${profile.email}` },
-    { href: `tel:${profile.phone.replace(/\s/g, '')}`, label: `📞 ${profile.phone}` },
+    { href: `mailto:${profile.email}`, label: '✉️ Email' },
+    { href: `tel:${profile.phone.replace(/\s/g, '')}`, label: '📞 Phone' },
+    { href: `https://wa.me/${profile.phone.replace(/\D/g, '')}`, label: '💬 WhatsApp', target: '_blank', rel: 'noopener noreferrer' },
     { href: profile.resumePdf, label: '📄 Download Resume', download: true },
   ];
 

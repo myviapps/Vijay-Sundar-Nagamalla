@@ -22,7 +22,7 @@ export default function Skills({ skills }) {
                 key={card.title}
                 className={`skill-card sa sa-delay-${delay}${visible ? ' visible' : ''}`}
               >
-                <div className="skill-card-icon">{card.icon}</div>
+
                 <h3>{card.title}</h3>
                 <div className="skill-pills">
                   {card.pills.map((pill) => (

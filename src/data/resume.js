@@ -170,34 +170,28 @@ export const projects = [
 
 export const skills = [
   {
-    icon: '🤖',
+    title: 'Languages & Core',
+    pills: ['C', 'Java', 'Python', 'DSA', 'SQL'],
+  },
+  {
+    title: 'Web Technologies',
+    pills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'TypeScript', 'React 19', 'Next.js', 'TailwindCSS'],
+  },
+  {
     title: 'AI / ML',
     pills: ['RAG Pipelines', 'MCP', 'LangChain', 'OpenAI API', 'Claude API', 'FAISS', 'XGBoost', 'NVIDIA AI'],
   },
   {
-    icon: '⚛️',
-    title: 'Frontend',
-    pills: ['React 19', 'Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'TanStack Query'],
+    title: 'Backend & Data',
+    pills: ['FastAPI', 'Node.js', 'PostgreSQL', 'MySQL', 'Redis', 'Supabase', 'JWT'],
   },
   {
-    icon: '⚙️',
-    title: 'Backend',
-    pills: ['FastAPI', 'Node.js', 'REST APIs', 'JWT', 'RBAC', 'APScheduler'],
+    title: 'DevOps & Tools',
+    pills: ['Docker', 'Celery', 'Nginx', 'Vercel', 'Render', 'Git', 'LMS'],
   },
   {
-    icon: '🗄️',
-    title: 'Databases',
-    pills: ['PostgreSQL', 'MySQL', 'Redis', 'Supabase'],
-  },
-  {
-    icon: '🐳',
-    title: 'DevOps',
-    pills: ['Docker', 'Celery', 'Nginx', 'Vercel', 'Render'],
-  },
-  {
-    icon: '📊',
-    title: 'Training & Ops',
-    pills: ['Technical Training', 'Power BI', 'Google Sheets API', 'MS Excel', 'LMS'],
+    title: 'Management & Analytics',
+    pills: ['Technical Training', 'Power BI', 'Google Sheets API', 'MS Excel', 'Program Operations'],
   },
 ];
 
