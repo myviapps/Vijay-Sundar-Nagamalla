@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 const NAV_SECTIONS = ['skills', 'projects', 'experience', 'contact'];
 
-export default function Navbar() {
+export default function Navbar({ profile }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [scrolled, setScrolled] = useState(false);
@@ -49,12 +49,13 @@ export default function Navbar() {
                 {id.charAt(0).toUpperCase() + id.slice(1)}
               </a>
             ))}
-            <a
-              href="mailto:vijaysundarn@gmail.com"
+            <button
+              data-cal-link="vijay-sundar-nagumalla"
+              data-cal-config='{"layout":"month_view"}'
               className="nav-hire"
             >
-              Hire Me
-            </a>
+              Grab a Slot
+            </button>
           </div>
 
           {/* Hamburger */}
@@ -76,9 +77,13 @@ export default function Navbar() {
             {id.charAt(0).toUpperCase() + id.slice(1)}
           </a>
         ))}
-        <a href="mailto:vijaysundarn@gmail.com" className="nav-hire" onClick={closeMenu}>
-          Hire Me
-        </a>
+        <button 
+          data-cal-link="vijay-sundar-nagumalla" 
+          className="nav-hire" 
+          onClick={closeMenu}
+        >
+          Grab a Slot
+        </button>
       </div>
     </>
   );

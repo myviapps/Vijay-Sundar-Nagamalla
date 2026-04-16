@@ -23,7 +23,7 @@ export const experience = [
     bullets: [
       'Architected 5 production AI + full-stack platforms from design to deployment',
       'Engineered RAG pipelines, MCP agents, and the WAT agentic orchestration framework',
-      'Trained 15,000+ learners across 40+ colleges — 30% avg improvement in assessment outcomes',
+      'Trained 15,000+ learners across 40+ colleges — 50% avg improvement in assessment outcomes',
       '95%+ data accuracy across LMS systems; 30% improvement in program completion rates',
     ],
   },
@@ -32,7 +32,7 @@ export const experience = [
     startDate: '2023-05-01',
     endDate: '2024-12-01',
     title: 'Technical Project Manager',
-    company: 'Xplore',
+    company: 'Xplore.co.in',
     bullets: [
       'Led concurrent training programs as Lead Trainer — 100% on-time delivery',
       'Built Power BI dashboards for executive-level KPI reporting',
@@ -204,6 +204,8 @@ export const profile = {
   name: 'Vijay Sundar Nagamalla',
   email: 'vijaysundarn@gmail.com',
   phone: '+91 9391122607',
+  linkedin: 'https://www.linkedin.com/in/vijaysundarn/',
+  calLink: 'https://cal.com/vijay-sundar-nagumalla',
   resumePdf: '/Vijay_Sundar_Nagamalla_Resume.pdf',
   heroImage: '/images/ai_trainer_hero_isometric-Photoroom.png',
   typedPhrases: [
@@ -219,6 +221,7 @@ export const profile = {
   description:
     'From classroom to codebase — I trained 15,000+ learners in programming fundamentals, then taught myself to build production AI systems. Now I architect RAG pipelines, MCP tool-calling agents, and agentic frameworks across FinTech, EdTech, and enterprise SaaS.',
   tags: ['Technical Training', 'RAG Pipelines', 'MCP Tool Calling', 'LangChain', 'React 19', 'FastAPI', 'Agentic AI', 'Docker', 'PostgreSQL'],
+  navbarCta: 'Book a Call',
   contactCta: "Let's Build Something Together",
   contactDesc:
     'Open to AI Developer, Full-Stack, Technical Training, and Applied AI roles — especially in FinTech, EdTech, and SaaS domains.',
@@ -241,6 +244,6 @@ export const stats = [
   { value: 15000,           suffix: '+', label: 'Learners Trained',       isFloat: false },
   { value: 40,              suffix: '+', label: 'Colleges',               isFloat: false },
   { value: productionCount, suffix: '',  label: 'Production Platforms',   isFloat: false },
-  { value: 30,              suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
+  { value: 50,              suffix: '%', label: 'Avg Learner Improvement', isFloat: false },
   { value: toolsCount,      suffix: '+', label: 'Tools Built (UtilKit)',   isFloat: false },
 ];

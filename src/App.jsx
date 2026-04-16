@@ -12,7 +12,7 @@ import { profile, stats, skills, projects, experience } from './data/resume';
 export default function App() {
   return (
     <>
-      <Navbar />
+      <Navbar profile={profile} />
       <main>
         <Hero profile={profile} />
         <StatsBar stats={stats} />

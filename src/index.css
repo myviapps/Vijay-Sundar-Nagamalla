@@ -130,11 +130,14 @@ nav.nav-scrolled {
   align-items: center;
   background-color: var(--accent) !important;
   color: #fff !important;
-  padding: 0.45rem 1.1rem;
+  padding: 0.45rem 1.1rem !important;
   border-radius: 7px;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
   transition: background 0.2s, transform 0.15s !important;
 }
 .nav-hire:hover {

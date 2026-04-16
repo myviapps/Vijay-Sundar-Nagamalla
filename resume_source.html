@@ -1,364 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vijay Sundar Nagamalla — Resume</title>
+  <title>Vijay Sundar Nagamalla Resume</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    @page {
+      size: A4;
+      margin: 16mm 18mm 16mm 18mm;
+    }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    @page { size: A4; margin: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #0f172a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5pt;
+      color: #000;
       background: #fff;
-      line-height: 1.5;
-      font-size: 10.5px;
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
+      line-height: 1.45;
     }
 
     .page {
       width: 210mm;
       min-height: 297mm;
-      padding: 24px 28px;
+      padding: 16mm 18mm;
       margin: 0 auto;
       background: #fff;
     }
 
-    /* ── HEADER ─────────────────────────────────── */
+    /* ── HEADER ──────────────────────────────── */
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding-bottom: 12px;
-      border-bottom: 2.5px solid #2563eb;
-      margin-bottom: 14px;
+      text-align: center;
+      margin-bottom: 10px;
     }
-    .header-left h1 {
-      font-size: 22px;
-      font-weight: 800;
-      color: #0f172a;
-      letter-spacing: -0.5px;
+
+    .header h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .header .contact {
+      font-size: 9.5pt;
       margin-bottom: 3px;
     }
-    .header-left .subtitle {
-      font-size: 12px;
-      font-weight: 600;
-      color: #2563eb;
-      margin-bottom: 5px;
-    }
-    .header-left .tagline {
-      font-size: 10px;
-      color: #475569;
-      max-width: 380px;
-      line-height: 1.45;
-    }
-    .header-right {
-      text-align: right;
-      font-size: 9.5px;
-      color: #475569;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .header-right a { color: #2563eb; text-decoration: none; }
 
-    /* ── SECTIONS ──────────────────────────────── */
-    .section { margin-bottom: 13px; }
+    .header .titles {
+      font-size: 10pt;
+      font-weight: bold;
+    }
+
+    /* ── SECTION ─────────────────────────────── */
+    .section {
+      margin-top: 10px;
+    }
+
     .section-title {
-      font-size: 10px;
-      font-weight: 700;
-      color: #2563eb;
+      font-size: 10.5pt;
+      font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 3px;
-      margin-bottom: 8px;
+      letter-spacing: 0.8px;
+      border-bottom: 1.5px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 7px;
     }
 
-    /* ── SKILLS ─────────────────────────────────── */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 6px;
-    }
-    .skill-group h3 {
-      font-size: 9.5px;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 2px;
-    }
-    .skill-group p {
-      font-size: 9px;
-      color: #475569;
-      line-height: 1.4;
+    /* ── SUMMARY ─────────────────────────────── */
+    .summary {
+      font-size: 10pt;
+      line-height: 1.5;
     }
 
-    /* ── EXPERIENCE ─────────────────────────────── */
-    .exp-item { margin-bottom: 10px; }
-    .exp-header {
+    /* ── SKILLS ──────────────────────────────── */
+    .skill-row {
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+
+    /* ── EXPERIENCE ──────────────────────────── */
+    .exp-item {
+      margin-bottom: 9px;
+    }
+
+    .exp-top {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 2px;
     }
+
     .exp-role {
-      font-size: 11px;
-      font-weight: 700;
-      color: #0f172a;
+      font-size: 10.5pt;
+      font-weight: bold;
     }
+
     .exp-dates {
-      font-size: 9px;
-      color: #64748b;
-      font-weight: 500;
+      font-size: 10pt;
+      white-space: nowrap;
     }
+
     .exp-company {
-      font-size: 10px;
-      font-weight: 600;
-      color: #2563eb;
+      font-size: 10pt;
+      font-style: italic;
       margin-bottom: 4px;
     }
-    .exp-bullets {
-      list-style: none;
-      padding: 0;
+
+    ul.bullets {
+      list-style-type: disc;
+      margin-left: 18px;
     }
-    .exp-bullets li {
-      font-size: 9.5px;
-      color: #334155;
-      padding-left: 12px;
-      position: relative;
-      margin-bottom: 2px;
+
+    ul.bullets li {
+      font-size: 10pt;
       line-height: 1.45;
-    }
-    .exp-bullets li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: #2563eb;
-      font-size: 9px;
-    }
-
-    /* ── PROJECTS ──────────────────────────────── */
-    .proj-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-    .proj-item {
-      border: 1px solid #e2e8f0;
-      border-radius: 6px;
-      padding: 8px 10px;
-      border-left: 3px solid #2563eb;
-    }
-    .proj-item.purple { border-left-color: #7c3aed; }
-    .proj-item.orange { border-left-color: #ea580c; }
-    .proj-item.green { border-left-color: #16a34a; }
-    .proj-item.teal { border-left-color: #0d9488; }
-    .proj-name {
-      font-size: 10px;
-      font-weight: 700;
-      color: #0f172a;
       margin-bottom: 2px;
     }
-    .proj-stack {
-      font-size: 8.5px;
-      color: #64748b;
-      margin-bottom: 3px;
-    }
-    .proj-desc {
-      font-size: 9px;
-      color: #475569;
-      line-height: 1.4;
+
+    /* ── PROJECTS ────────────────────────────── */
+    .proj-item {
+      margin-bottom: 8px;
     }
 
-    /* ── STATS BAR ─────────────────────────────── */
-    .stats-bar {
+    .proj-top {
       display: flex;
       justify-content: space-between;
-      background: #f1f5f9;
-      border-radius: 8px;
-      padding: 10px 16px;
-      margin-bottom: 14px;
+      align-items: baseline;
     }
-    .stat-item { text-align: center; }
-    .stat-num {
-      font-size: 16px;
-      font-weight: 800;
-      color: #2563eb;
+
+    .proj-name {
+      font-size: 10.5pt;
+      font-weight: bold;
     }
-    .stat-label {
-      font-size: 8px;
-      color: #64748b;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+
+    .proj-link {
+      font-size: 9.5pt;
+    }
+
+    .proj-stack {
+      font-size: 9.5pt;
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+
+    /* ── COMPETENCIES ────────────────────────── */
+    .comp-row {
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+
+    a {
+      color: #1a0dab;
+      text-decoration: underline;
     }
 
     @media print {
-      body { background: none; }
-      .page { padding: 20px 24px; }
+      body {
+        background: none;
+      }
+
+      .page {
+        padding: 0;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
+
     <!-- HEADER -->
     <div class="header">
-      <div class="header-left">
-        <h1>Vijay Sundar Nagamalla</h1>
-        <div class="subtitle">Educator & Self-Taught AI Developer</div>
-        <div class="tagline">
-          From classroom to codebase — trained 15,000+ learners in programming fundamentals,
-          then self-taught production AI systems. Architect of RAG pipelines, MCP tool-calling agents,
-          and agentic frameworks across FinTech, EdTech, and enterprise SaaS.
-        </div>
+      <h1>Vijay Sundar Nagamalla</h1>
+      <div class="contact">
+        +91 9391122607 |
+        <a href="mailto:vijaysundarn@gmail.com">vijaysundarn@gmail.com</a> |
+        <a href="https://linkedin.com/in/vijaysundarn">LinkedIn</a> |
+        <a href="https://github.com/myviapps">GitHub</a> |
+        <a href="https://vijaysundar.vercel.app">Portfolio</a>
       </div>
-      <div class="header-right">
-        <span>✉️ vijaysundarn@gmail.com</span>
-        <span>📞 +91 9391122607</span>
-        <span>🔗 <a href="https://github.com/myviapps">github.com/myviapps</a></span>
+      <div class="titles">
+        AI Application Developer | Full Stack Engineer | Agentic Systems Architect
       </div>
     </div>
 
-    <!-- STATS -->
-    <div class="stats-bar">
-      <div class="stat-item">
-        <div class="stat-num">7.5+</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">15,000+</div>
-        <div class="stat-label">Learners Trained</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Production Platforms</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">30%</div>
-        <div class="stat-label">Avg Learner Improvement</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">63+</div>
-        <div class="stat-label">Tools Built</div>
-      </div>
+    <!-- PROFESSIONAL SUMMARY -->
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary">
+        Full-stack AI engineer and veteran technical trainer with 8+ years of experience building production AI
+        systems and training 15,000+ learners across 40+ colleges. Currently developing 6 platforms: PropIQ
+        (CRE Loan Intelligence with RAG, MCP, and XGBoost), SkillForge (multi-tenant EdTech SaaS), UtilKit
+        (63-tool digital utility platform), WAT Framework (agentic architecture), Vimysun (academic analytics),
+        and a Personal Portfolio. Specializes in AI engineering (RAG pipelines, MCP tool-calling, agentic
+        orchestration, vector databases, LLM integration) paired with delivery excellence and stakeholder
+        communication.
+      </p>
     </div>
 
-    <!-- SKILLS -->
+    <!-- TECHNICAL SKILLS -->
     <div class="section">
       <div class="section-title">Technical Skills</div>
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h3>🤖 AI / ML</h3>
-          <p>RAG Pipelines · MCP · LangChain · OpenAI API · Claude API · FAISS · XGBoost · NVIDIA AI</p>
-        </div>
-        <div class="skill-group">
-          <h3>⚛️ Frontend</h3>
-          <p>React 19 · Next.js · TypeScript · TailwindCSS · Framer Motion · TanStack Query</p>
-        </div>
-        <div class="skill-group">
-          <h3>⚙️ Backend</h3>
-          <p>FastAPI · Node.js · REST APIs · JWT · RBAC · APScheduler</p>
-        </div>
-        <div class="skill-group">
-          <h3>🗄️ Databases</h3>
-          <p>PostgreSQL · MySQL · Redis · Supabase</p>
-        </div>
-        <div class="skill-group">
-          <h3>🐳 DevOps</h3>
-          <p>Docker · Celery · Nginx · Vercel · Render</p>
-        </div>
-        <div class="skill-group">
-          <h3>📊 Training & Ops</h3>
-          <p>Technical Training · Power BI · Google Sheets API · Excel · LMS</p>
-        </div>
-      </div>
+      <div class="skill-row"><strong>AI / ML:</strong> RAG Pipelines, MCP (Model Context Protocol), LangChain, OpenAI
+        API, Claude API, FAISS, XGBoost, NVIDIA AI</div>
+      <div class="skill-row"><strong>Frontend:</strong> React 19, Next.js, TypeScript, TailwindCSS, Framer Motion,
+        TanStack Query</div>
+      <div class="skill-row"><strong>Backend:</strong> FastAPI (Python), Node.js, Express, REST APIs, JWT, RBAC,
+        APScheduler</div>
+      <div class="skill-row"><strong>Databases:</strong> PostgreSQL, MySQL, Redis, Supabase</div>
+      <div class="skill-row"><strong>DevOps:</strong> Docker, Celery, Nginx, Vercel, Render</div>
+      <div class="skill-row"><strong>Languages:</strong> Python, JavaScript, TypeScript, Java, SQL</div>
+      <div class="skill-row"><strong>Training and Ops:</strong> Technical Training, Power BI, Google Sheets API, MS
+        Excel, LMS, Learning KPIs</div>
     </div>
 
-    <!-- EXPERIENCE -->
+    <!-- PROFESSIONAL EXPERIENCE -->
     <div class="section">
       <div class="section-title">Professional Experience</div>
 
       <div class="exp-item">
-        <div class="exp-header">
+        <div class="exp-top">
           <span class="exp-role">Senior Technical Trainer / AI Developer</span>
           <span class="exp-dates">May 2021 – Present</span>
         </div>
         <div class="exp-company">Freelance</div>
-        <ul class="exp-bullets">
-          <li>Architected 5 production AI + full-stack platforms from design to deployment</li>
-          <li>Engineered RAG pipelines, MCP agents, and the WAT agentic orchestration framework</li>
-          <li>Trained 15,000+ learners — 30% avg improvement in assessment outcomes</li>
-          <li>95%+ data accuracy across LMS systems; 30% improvement in program completion rates</li>
+        <ul class="bullets">
+          <li>Architected and shipped 6 production-grade AI and full-stack platforms from design to deployment</li>
+          <li>Engineered RAG pipelines, MCP tool-calling agents, and the WAT agentic orchestration framework</li>
+          <li>Built AI Copilot interfaces, vector store integrations, risk scoring engines, and XGBoost predictive
+            models</li>
+          <li>Trained 15,000+ learners across 40+ colleges — 50% average improvement in assessment outcomes</li>
+          <li>Delivered daily instructor-led sessions on Java, Python, SQL, and DSA to engineering and professional
+            cohorts</li>
+          <li>Maintained 95%+ data accuracy across LMS systems; drove 30% improvement in program completion rates</li>
+          <li>Generated weekly and monthly KPI reports; coordinated with instructional designers on content publishing
+          </li>
         </ul>
       </div>
 
       <div class="exp-item">
-        <div class="exp-header">
+        <div class="exp-top">
           <span class="exp-role">Technical Project Manager</span>
-          <span class="exp-dates">May 2023 – Dec 2024</span>
+          <span class="exp-dates">May 2023 – December 2024</span>
         </div>
-        <div class="exp-company">Xplore</div>
-        <ul class="exp-bullets">
-          <li>Led concurrent training programs as Lead Trainer — 100% on-time delivery</li>
-          <li>Built Power BI dashboards for executive-level KPI reporting</li>
-          <li>Owned training calendars, batch planning, and stakeholder coordination</li>
+        <div class="exp-company">Xplore.co.in</div>
+        <ul class="bullets">
+          <li>Led multiple concurrent learning programs as Lead Trainer — achieved 100% on-time delivery</li>
+          <li>Built Power BI executive dashboards tracking attendance, assessment scores, completion rates, and learner
+            satisfaction</li>
+          <li>Owned training calendars, batch planning, facilitator coordination, and stakeholder reporting</li>
         </ul>
       </div>
 
       <div class="exp-item">
-        <div class="exp-header">
+        <div class="exp-top">
           <span class="exp-role">Associate Trainer</span>
-          <span class="exp-dates">Jun 2018 – May 2021</span>
+          <span class="exp-dates">June 2018 – May 2021</span>
         </div>
         <div class="exp-company">FACE</div>
-        <ul class="exp-bullets">
-          <li>Delivered Java, Python, and SQL instruction to 80+ learners per batch</li>
-          <li>Managed full session lifecycle: onboarding, attendance, feedback analysis</li>
+        <ul class="bullets">
+          <li>Delivered Java, Python, and SQL instruction to 80+ learners per batch across concurrent programs</li>
+          <li>Managed full session lifecycle: onboarding, attendance, logistics, issue resolution, and feedback</li>
         </ul>
       </div>
     </div>
 
-    <!-- PROJECTS -->
+    <!-- KEY PROJECTS -->
     <div class="section">
       <div class="section-title">Key Projects</div>
-      <div class="proj-grid">
-        <div class="proj-item">
-          <div class="proj-name">PropIQ — CRE Loan Intelligence</div>
-          <div class="proj-stack">React · Node.js · MySQL · LangChain · FAISS · MCP</div>
-          <div class="proj-desc">AI platform for CRE loan servicing — RAG pipeline + MCP tool calling + XGBoost risk scoring</div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">PropIQ — AI-Powered CRE Loan Intelligence Platform</span>
         </div>
-        <div class="proj-item purple">
-          <div class="proj-name">SkillForge — Campus Coding Ecosystem</div>
-          <div class="proj-stack">React 19 · TypeScript · FastAPI · PostgreSQL · Docker · NVIDIA AI</div>
-          <div class="proj-desc">Multi-tenant EdTech with 8-role RBAC, AI mentorship, Docker code judge</div>
+        <div class="proj-stack">React, Node.js, Express, MySQL, LangChain, OpenAI API, FAISS, MCP</div>
+        <ul class="bullets">
+          <li>Architected a domain-specific AI platform for commercial real estate loan servicing and risk intelligence
+          </li>
+          <li>RAG Pipeline: Loan PDFs chunked, embedded via OpenAI, stored in FAISS, with top-k retrieval for grounded
+            LLM answers</li>
+          <li>MCP Tool Calling: 4 structured AI tools (getLoanDetails, getRiskScore, getPaymentHistory,
+            getAllRiskyLoans)</li>
+          <li>Risk Scoring Engine: Weighted rule engine (payment delay 40%, income decline 30%, occupancy 30%) producing
+            HIGH / MEDIUM / LOW classifications</li>
+          <li>Predictive Analytics: XGBoost model predicting loan default probability and 6-month revenue trends</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">SkillForge — AI-Powered Campus Coding Ecosystem</span>
+          <a class="proj-link" href="https://letskill.vercel.app">Click here to open</a>
         </div>
-        <div class="proj-item orange">
-          <div class="proj-name">WAT Framework — Agentic Architecture</div>
-          <div class="proj-stack">Python · Claude API · MCP · Markdown Workflows</div>
-          <div class="proj-desc">Reliability-first agentic framework: 59% pipeline failure → near-100% reliability</div>
+        <div class="proj-stack">React 19, TypeScript, FastAPI, PostgreSQL, Redis, Celery, Docker, NVIDIA AI</div>
+        <ul class="bullets">
+          <li>Engineered a production multi-tenant SaaS platform with 8-role RBAC and AI mentorship</li>
+          <li>AI Intelligence Hub: NVIDIA-powered Socratic code hints, automated Big-O code review, 24/7 AI tutor</li>
+          <li>Docker-isolated code judge for multi-language execution with timeout enforcement and leaderboards</li>
+          <li>Async platform sync via Celery and Redis scraping LeetCode, HackerRank, GeeksForGeeks, and CodeChef into
+            unified student profiles</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">WAT Framework — Agentic AI Architecture</span>
         </div>
-        <div class="proj-item green">
-          <div class="proj-name">Vimysun — CP Tracker Platform</div>
-          <div class="proj-stack">React · FastAPI · PostgreSQL · Supabase · JWT/RBAC</div>
-          <div class="proj-desc">Academic intelligence with proctor-grade assessments & velocity analytics</div>
+        <div class="proj-stack">Python, Claude API, MCP, Markdown Workflows</div>
+        <ul class="bullets">
+          <li>Designed a reliability-first agentic framework solving the AI error-compounding problem</li>
+          <li>Three-layer separation: Workflows (Markdown SOPs), Agent (orchestration), Tools (deterministic Python) —
+            AI decides, tools execute</li>
+          <li>Reliability result: 5 unchecked AI steps yield 59% success rate; WAT achieves near-100% determinism</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">Vimysun — Academic Intelligence Platform</span>
+          <a class="proj-link" href="https://vimysun.vercel.app">Click here to open</a>
         </div>
-        <div class="proj-item teal">
-          <div class="proj-name">UtilKit — Digital Utility Platform</div>
-          <div class="proj-stack">Next.js · FastAPI · PostgreSQL · Supabase · TailwindCSS</div>
-          <div class="proj-desc">Self-hosted SaaS with 63+ free productivity tools across 8 categories</div>
+        <div class="proj-stack">React, FastAPI, PostgreSQL, Supabase, Google Sheets API, JWT, RBAC</div>
+        <ul class="bullets">
+          <li>Built an academic tracker with proctor-grade assessment engine and deep analytics</li>
+          <li>Multi-platform sync: automated daily aggregation from LeetCode and HackerRank with velocity analytics</li>
+          <li>Proctored Assessment Engine: full-screen enforcement, tab-blur detection, violation logging,
+            offline-resilient state caching</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">UtilKit — Digital Utility Platform</span>
         </div>
-        <div class="proj-item purple">
-          <div class="proj-name">Personal Portfolio</div>
-          <div class="proj-stack">React 18 · Vite · Vanilla CSS · Vercel</div>
-          <div class="proj-desc">Responsive portfolio with scroll animations, dynamic stats, and SEO optimization</div>
-        </div>
+        <div class="proj-stack">Next.js, FastAPI, PostgreSQL, Supabase, TailwindCSS, Framer Motion</div>
+        <ul class="bullets">
+          <li>Built a self-hosted SaaS platform with 63+ free productivity tools across 8 categories</li>
+          <li>Modular architecture: each tool is an independent Next.js and FastAPI module — new tools add without
+            touching existing code</li>
+          <li>Async pipeline: FastAPI and APScheduler with auto file cleanup (1-hr TTL), 100 MB upload, 50 concurrent
+            jobs</li>
+          <li>3-tier subscription system (Free / Pro / Premium) with JWT auth and role-based admin dashboard</li>
+        </ul>
       </div>
     </div>
+
+    <!-- CORE COMPETENCIES -->
+    <div class="section">
+      <div class="section-title">Core Competencies</div>
+      <div class="comp-row"><strong>AI System Architecture:</strong> RAG, MCP, Agentic Orchestration, LLM Integration,
+        Vector Databases</div>
+      <div class="comp-row"><strong>Full Stack Engineering:</strong> React, FastAPI, Node.js, PostgreSQL, Docker</div>
+      <div class="comp-row"><strong>Technical Training:</strong> Java, Python, SQL, DSA, 15,000+ learners trained across
+        40+ colleges</div>
+      <div class="comp-row"><strong>Learning Operations:</strong> LMS, KPI Reporting, Stakeholder Management, Curriculum
+        Design</div>
+      <div class="comp-row"><strong>Systems Thinking:</strong> Translates AI architecture into operational workflows and
+        business outcomes</div>
+    </div>
+
   </div>
 </body>
+
 </html>

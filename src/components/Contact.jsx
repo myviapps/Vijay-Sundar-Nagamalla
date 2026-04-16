@@ -6,6 +6,8 @@ export default function Contact({ profile }) {
   const visible = useIntersectionObserver(ref, { threshold: 0.2 });
 
   const links = [
+    { href: profile.calLink, label: '📅 Grab a Slot', target: '_blank', rel: 'noopener noreferrer' },
+    { href: profile.linkedin, label: '🔗 LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
     { href: `mailto:${profile.email}`, label: `✉️ ${profile.email}` },
     { href: `tel:${profile.phone.replace(/\s/g, '')}`, label: `📞 ${profile.phone}` },
     { href: profile.resumePdf, label: '📄 Download Resume', download: true },
@@ -24,6 +26,8 @@ export default function Contact({ profile }) {
                 className="contact-link"
                 href={link.href}
                 download={link.download || undefined}
+                target={link.target || undefined}
+                rel={link.rel || undefined}
               >
                 {link.label}
               </a>
