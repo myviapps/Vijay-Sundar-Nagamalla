@@ -84,7 +84,7 @@ export const projects = [
     badge: '🎓 EdTech SaaS · Multi-tenant',
     status: 'deployed',
     statusLabel: 'Deployed',
-    title: 'SkillForge — Campus Coding Ecosystem',
+    title: 'MINT.IT — Campus Coding Ecosystem',
     stack: 'React 19 · TypeScript · FastAPI · PostgreSQL · Redis · Celery · Docker · NVIDIA AI',
     impact: 'Multi-tenant platform with 8-role RBAC and AI mentorship',
     bullets: [
@@ -93,7 +93,7 @@ export const projects = [
       'Celery + Redis: async sync from LeetCode, HackerRank, GFG',
       'Institution Command Center with dual-sidebar architecture',
     ],
-    link: 'https://letskill.vercel.app/',
+    link: 'https://mints.it.com/',
   },
   {
     id: 3,
