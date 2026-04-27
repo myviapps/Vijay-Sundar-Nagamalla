@@ -283,19 +283,20 @@
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">PropIQ — AI-Powered CRE Loan Intelligence Platform</span>
+          <span class="proj-name">DATAVORE — AI Document Intelligence Platform</span>
         </div>
-        <div class="proj-stack">React, Node.js, Express, MySQL, LangChain, OpenAI API, FAISS, MCP</div>
+        <div class="proj-stack">Next.js 16, FastAPI, PostgreSQL, LiteLLM, Claude/GPT-4/Ollama, Tesseract OCR, Framer Motion</div>
         <ul class="bullets">
-          <li>Architected a domain-specific AI platform for commercial real estate loan servicing and risk intelligence
-          </li>
-          <li>RAG Pipeline: Loan PDFs chunked, embedded via OpenAI, stored in FAISS, with top-k retrieval for grounded
-            LLM answers</li>
-          <li>MCP Tool Calling: 4 structured AI tools (getLoanDetails, getRiskScore, getPaymentHistory,
-            getAllRiskyLoans)</li>
-          <li>Risk Scoring Engine: Weighted rule engine (payment delay 40%, income decline 30%, occupancy 30%) producing
-            HIGH / MEDIUM / LOW classifications</li>
-          <li>Predictive Analytics: XGBoost model predicting loan default probability and 6-month revenue trends</li>
+          <li>Built an end-to-end AI document extraction platform — ingest PDFs, scanned images, DOCX, and ZIP archives;
+            extract structured field-level data at scale</li>
+          <li>Provider-agnostic AI layer via LiteLLM supporting Claude, GPT-4, and local Ollama models with per-field
+            confidence scoring and colour-coded Excel export</li>
+          <li>Human-in-the-loop review UI: page-by-page document viewer with inline correction; corrections stored as
+            few-shot examples to improve future extractions</li>
+          <li>Real-time folder watching and cloud sync (Google Drive, SharePoint via MS Graph API); ephemeral data
+            lifecycle with configurable retention window</li>
+          <li>Multi-tenant RBAC with up to 50 seats; 3-tier pricing (Free / Premium / Enterprise) with audit logs and
+            custom retention</li>
         </ul>
       </div>
 
@@ -353,6 +354,24 @@
           <li>Async pipeline: FastAPI and APScheduler with auto file cleanup (1-hr TTL), 100 MB upload, 50 concurrent
             jobs</li>
           <li>3-tier subscription system (Free / Pro / Premium) with JWT auth and role-based admin dashboard</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-top">
+          <span class="proj-name">PropIQ — AI-Powered CRE Loan Intelligence Platform</span>
+        </div>
+        <div class="proj-stack">React, Node.js, Express, MySQL, LangChain, OpenAI API, FAISS, MCP</div>
+        <ul class="bullets">
+          <li>Architected a domain-specific AI platform for commercial real estate loan servicing and risk intelligence
+          </li>
+          <li>RAG Pipeline: Loan PDFs chunked, embedded via OpenAI, stored in FAISS, with top-k retrieval for grounded
+            LLM answers</li>
+          <li>MCP Tool Calling: 4 structured AI tools (getLoanDetails, getRiskScore, getPaymentHistory,
+            getAllRiskyLoans)</li>
+          <li>Risk Scoring Engine: Weighted rule engine (payment delay 40%, income decline 30%, occupancy 30%) producing
+            HIGH / MEDIUM / LOW classifications</li>
+          <li>Predictive Analytics: XGBoost model predicting loan default probability and 6-month revenue trends</li>
         </ul>
       </div>
     </div>
