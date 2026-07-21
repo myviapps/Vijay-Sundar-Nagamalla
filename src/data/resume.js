@@ -119,7 +119,7 @@ export const projects = [
     badge: '📈 Academic Analytics',
     status: 'deployed',
     statusLabel: 'Deployed',
-    title: 'Vimysun — CP Tracker Platform',
+    title: 'Vukti.in — CP Tracker Platform',
     stack: 'React · FastAPI · PostgreSQL · Supabase · Google Sheets API · JWT/RBAC',
     impact: 'Academic intelligence with proctor-grade assessment engine',
     bullets: [
@@ -127,7 +127,7 @@ export const projects = [
       'Full-screen proctoring: tab-blur detection, violation logging',
       'Per-question analytics, pass rates, CSV + Sheets API exports',
     ],
-    link: 'https://vimysun.vercel.app/',
+    link: 'https://vukti.in',
   },
   {
     id: 5,
