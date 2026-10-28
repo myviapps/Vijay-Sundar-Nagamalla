@@ -203,15 +203,15 @@
     <!-- TECHNICAL SKILLS -->
     <div class="section">
       <div class="section-title">Technical Skills</div>
-      <div class="skill-row"><strong>AI / ML:</strong> RAG Pipelines, MCP (Model Context Protocol), LangChain, OpenAI
-        API, Claude API, FAISS, XGBoost, NVIDIA AI</div>
-      <div class="skill-row"><strong>Frontend:</strong> React 19, Next.js, TypeScript, TailwindCSS, Framer Motion,
-        TanStack Query</div>
-      <div class="skill-row"><strong>Backend:</strong> FastAPI (Python), Node.js, Express, REST APIs, JWT, RBAC,
-        APScheduler</div>
-      <div class="skill-row"><strong>Databases:</strong> PostgreSQL, MySQL, Redis, Supabase</div>
-      <div class="skill-row"><strong>DevOps:</strong> Docker, Celery, Nginx, Vercel, Render</div>
-      <div class="skill-row"><strong>Languages:</strong> Python, JavaScript, TypeScript, Java, SQL</div>
+      <div class="skill-row"><strong>AI / ML:</strong> RAG Pipelines, MCP (Model Context Protocol), Claude API, OpenAI
+        API, NVIDIA NIM, Whisper ONNX, DeepSeek</div>
+      <div class="skill-row"><strong>Frontend:</strong> React 19, TanStack Start, TypeScript, TailwindCSS, Framer Motion,
+        TanStack Query, shadcn/ui</div>
+      <div class="skill-row"><strong>Backend:</strong> FastAPI (Python), Node.js, C# / .NET 8 WPF, REST APIs, JWT, RBAC,
+        Judge0</div>
+      <div class="skill-row"><strong>Databases:</strong> PostgreSQL, Redis, Supabase, SQLite</div>
+      <div class="skill-row"><strong>DevOps:</strong> Docker, Nginx, Vercel, GitHub Pages, GitHub Actions</div>
+      <div class="skill-row"><strong>Languages:</strong> Python, JavaScript, TypeScript, C#, Java, SQL</div>
       <div class="skill-row"><strong>Training and Ops:</strong> Technical Training, Power BI, Google Sheets API, MS
         Excel, LMS, Learning KPIs</div>
     </div>
@@ -227,8 +227,8 @@
         </div>
         <div class="exp-company">Freelance</div>
         <ul class="bullets">
-          <li>Architected and deployed 5+ end-to-end AI and full-stack platforms, specializing in RAG pipelines, MCP
-            agents, and the WAT orchestration framework</li>
+          <li>Architected and deployed 7+ end-to-end AI and full-stack platforms, including EdTech analytics
+            (Almaanac, Vukti), Salesforce tracking, and an AI-powered stealth desktop assistant (Forward)</li>
           <li>Delivered high-impact technical training in Java, Python, SQL, and DSA to 25,000+ learners, achieving ~50%
             average assessment improvement</li>
           <li>Managed end-to-end learning operations: from multi-track session scheduling and batch planning to learner
@@ -283,95 +283,78 @@
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">DATAVORE — AI Document Intelligence Platform</span>
+          <span class="proj-name">Almaanac — Classroom Coding Analytics Platform</span>
+          <a class="proj-link" href="https://almaanac.vercel.app/">Click here to open</a>
         </div>
-        <div class="proj-stack">Next.js 16, FastAPI, PostgreSQL, LiteLLM, Claude/GPT-4/Ollama, Tesseract OCR, Framer Motion</div>
+        <div class="proj-stack">TanStack Start (React 19), TanStack Router, TanStack Query v5, Supabase, Tailwind CSS v4, Recharts, TypeScript 5.8, Vercel</div>
         <ul class="bullets">
-          <li>Built an end-to-end AI document extraction platform — ingest PDFs, scanned images, DOCX, and ZIP archives;
-            extract structured field-level data at scale</li>
-          <li>Provider-agnostic AI layer via LiteLLM supporting Claude, GPT-4, and local Ollama models with per-field
-            confidence scoring and colour-coded Excel export</li>
-          <li>Human-in-the-loop review UI: page-by-page document viewer with inline correction; corrections stored as
-            few-shot examples to improve future extractions</li>
-          <li>Real-time folder watching and cloud sync (Google Drive, SharePoint via MS Graph API); ephemeral data
-            lifecycle with configurable retention window</li>
-          <li>Multi-tenant RBAC with up to 50 seats; 3-tier pricing (Free / Premium / Enterprise) with audit logs and
-            custom retention</li>
+          <li>Built a full-stack classroom analytics platform that monitors LeetCode activity across classrooms and cohorts for educators and placement officers</li>
+          <li>LeetCode GraphQL integration: scrapes solved counts, submission calendars, contest ratings, badges, and language stats with exponential backoff</li>
+          <li>Dashboards with leaderboards, behavioral buckets ("Active Today", "At Risk", "Top Performers"), heatmaps, 30-day trends, and difficulty-split charts</li>
+          <li>Automated refresh: daily Vercel cron + GitHub Actions pump with Postgres-level lease locking and rate-limited concurrency</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">MINT.IT — AI-Powered Campus Coding Ecosystem</span>
-          <a class="proj-link" href="https://mints.it.com/">Click here to open</a>
+          <span class="proj-name">Vukti — Unified Academic Intelligence Platform</span>
         </div>
-        <div class="proj-stack">React 19, TypeScript, FastAPI, PostgreSQL, Redis, Celery, Docker, NVIDIA AI</div>
+        <div class="proj-stack">React 19, Vite 7, TailwindCSS 4, FastAPI, PostgreSQL 16, Redis 7, Docker, Judge0, NVIDIA AI</div>
         <ul class="bullets">
-          <li>Engineered a production multi-tenant SaaS platform with 8-role RBAC and AI mentorship</li>
-          <li>AI Intelligence Hub: NVIDIA-powered Socratic code hints, automated Big-O code review, 24/7 AI tutor</li>
-          <li>Docker-isolated code judge for multi-language execution with timeout enforcement and leaderboards</li>
-          <li>Async platform sync via Celery and Redis scraping LeetCode, HackerRank, GeeksForGeeks, and CodeChef into
-            unified student profiles</li>
+          <li>Architecting a 9-module student operating system for technical education (B2B + B2C), targeting 10,000 concurrent users</li>
+          <li>Multi-platform sync from 6 coding platforms (LeetCode, HackerRank, CodeChef, Codeforces, GFG, HackerEarth) with async scraper orchestrator</li>
+          <li>Assessment engine: MCQ + Coding + SQL with Docker-isolated Judge0 execution, full-screen proctoring, and tab-blur detection</li>
+          <li>VIMY gamified practice: 1,000+ problems, streaks, coins, XP levels, badges, leagues, and activity heatmaps</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">WAT Framework — Agentic AI Architecture</span>
+          <span class="proj-name">Salesforce Tracker — Trailhead Profile Scraper</span>
+          <a class="proj-link" href="https://myviapps.github.io/Salesforce-CMRTC/">Click here to open</a>
         </div>
-        <div class="proj-stack">Python, Claude API, MCP, Markdown Workflows</div>
+        <div class="proj-stack">TanStack Start (React 19), TanStack Router, Supabase, Tailwind CSS v4, shadcn/ui, XLSX, TypeScript</div>
         <ul class="bullets">
-          <li>Designed a reliability-first agentic framework solving the AI error-compounding problem</li>
-          <li>Three-layer separation: Workflows (Markdown SOPs), Agent (orchestration), Tools (deterministic Python) —
-            AI decides, tools execute</li>
-          <li>Reliability result: 5 unchecked AI steps yield 59% success rate; WAT achieves near-100% determinism</li>
+          <li>Bulk-scrape Salesforce Trailhead profiles from URLs or Excel uploads for institutional tracking and certification monitoring</li>
+          <li>Auto-detect Trailhead profile columns, batch-scrape with progress tracking, and merge with uploaded metadata</li>
+          <li>Persistent session history with export to Excel and server-side scraping via TanStack Start API routes</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">Vukti.in — Academic Intelligence Platform</span>
-          <a class="proj-link" href="https://vukti.in">Click here to open</a>
+          <span class="proj-name">FDE Flow Atlas — Interactive Learning Platform</span>
+          <a class="proj-link" href="https://myviapps.github.io/fde-flow-atlas">Click here to open</a>
         </div>
-        <div class="proj-stack">React, FastAPI, PostgreSQL, Supabase, Google Sheets API, JWT, RBAC</div>
+        <div class="proj-stack">Vanilla HTML/CSS/JS, SVG Animations, LocalStorage Progress, GitHub Pages</div>
         <ul class="bullets">
-          <li>Built an academic tracker with proctor-grade assessment engine and deep analytics</li>
-          <li>Multi-platform sync: automated daily aggregation from LeetCode and HackerRank with velocity analytics</li>
-          <li>Proctored Assessment Engine: full-screen enforcement, tab-blur detection, violation logging,
-            offline-resilient state caching</li>
+          <li>133-topic interactive curriculum for Forward Deployed Engineering with animated SVG flow diagrams, case studies, and 11 hands-on projects</li>
+          <li>Step-by-step narration with code highlighting, playback controls, interactive quizzes, and fill-in templates</li>
+          <li>Covers RAG pipelines, tool calling, agentic loops, case decomposition — all progress tracked via localStorage</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">UtilKit — Digital Utility Platform</span>
+          <span class="proj-name">ILFU — AI Research Project</span>
+          <a class="proj-link" href="https://github.com/myviapps/I-L-F-U">GitHub</a>
         </div>
-        <div class="proj-stack">Next.js, FastAPI, PostgreSQL, Supabase, TailwindCSS, Framer Motion</div>
+        <div class="proj-stack">Python, AI/ML Stack</div>
         <ul class="bullets">
-          <li>Built a self-hosted SaaS platform with 63+ free productivity tools across 8 categories</li>
-          <li>Modular architecture: each tool is an independent Next.js and FastAPI module — new tools add without
-            touching existing code</li>
-          <li>Async pipeline: FastAPI and APScheduler with auto file cleanup (1-hr TTL), 100 MB upload, 50 concurrent
-            jobs</li>
-          <li>3-tier subscription system (Free / Pro / Premium) with JWT auth and role-based admin dashboard</li>
+          <li>Experimental AI research and experimentation platform currently under active development</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">PropIQ — AI-Powered CRE Loan Intelligence Platform</span>
+          <span class="proj-name">Forward — AI Class Assistant (Desktop)</span>
         </div>
-        <div class="proj-stack">React, Node.js, Express, MySQL, LangChain, OpenAI API, FAISS, MCP</div>
+        <div class="proj-stack">C# WPF, .NET 8, Claude API, DeepSeek, NVIDIA NIM, NAudio WASAPI, Whisper ONNX, AMD XDNA NPU</div>
         <ul class="bullets">
-          <li>Architected a domain-specific AI platform for commercial real estate loan servicing and risk intelligence
-          </li>
-          <li>RAG Pipeline: Loan PDFs chunked, embedded via OpenAI, stored in FAISS, with top-k retrieval for grounded
-            LLM answers</li>
-          <li>MCP Tool Calling: 4 structured AI tools (getLoanDetails, getRiskScore, getPaymentHistory,
-            getAllRiskyLoans)</li>
-          <li>Risk Scoring Engine: Weighted rule engine (payment delay 40%, income decline 30%, occupancy 30%) producing
-            HIGH / MEDIUM / LOW classifications</li>
-          <li>Predictive Analytics: XGBoost model predicting loan default probability and 6-month revenue trends</li>
+          <li>Built an invisible-to-screen-capture AI desktop assistant with stealth overlay (WDA_EXCLUDEFROMCAPTURE P/Invoke)</li>
+          <li>Multi-provider AI fallback chain: Claude → DeepSeek → NVIDIA NIM → Groq → Ollama with automatic failover</li>
+          <li>Hardware-optimized: Whisper STT on AMD XDNA NPU, embeddings on Radeon DirectML GPU, Silero VAD on CPU</li>
+          <li>Hotkey-driven UX: Alt+Space (toggle overlay), Ctrl+Space (explain last 30s), Alt+A (focus input)</li>
         </ul>
       </div>
     </div>
@@ -379,15 +362,16 @@
     <!-- CORE COMPETENCIES -->
     <div class="section">
       <div class="section-title">Core Competencies</div>
-      <div class="comp-row"><strong>AI System Architecture:</strong> RAG, MCP, Agentic Orchestration, LLM Integration,
-        Vector Databases</div>
-      <div class="comp-row"><strong>Full Stack Engineering:</strong> React, FastAPI, Node.js, PostgreSQL, Docker</div>
+      <div class="comp-row"><strong>AI & Desktop Engineering:</strong> Claude/DeepSeek/NVIDIA NIM integration, Whisper STT,
+        on-device AI, stealth desktop UX</div>
+      <div class="comp-row"><strong>Full Stack Engineering:</strong> React 19, TanStack Start, FastAPI, PostgreSQL, Docker,
+        C# WPF / .NET 8</div>
+      <div class="comp-row"><strong>EdTech Platforms:</strong> Classroom analytics, assessment engines, multi-platform coding
+        trackers, gamified learning</div>
       <div class="comp-row"><strong>Technical Training:</strong> Java, Python, SQL, DSA, 50,000+ learners trained across
         40+ colleges</div>
       <div class="comp-row"><strong>Learning Operations:</strong> LMS, KPI Reporting, Stakeholder Management, Curriculum
         Design</div>
-      <div class="comp-row"><strong>Systems Thinking:</strong> Translates AI architecture into operational workflows and
-        business outcomes</div>
     </div>
 
   </div>
