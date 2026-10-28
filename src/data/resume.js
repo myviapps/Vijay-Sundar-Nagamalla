@@ -155,14 +155,14 @@ export const projects = [
     id: 6,
     color: 'indigo',
     filter: ['ai'],
-    badge: '🖥️ Desktop AI · Stealth Assistant',
+    badge: '🖥️ Desktop AI · Presenter Copilot',
     status: 'internal',
     statusLabel: 'Local Install',
-    title: 'Forward — AI Class Assistant',
+    title: 'Forward — Non-Intrusive Presenter & Live-Instruction Copilot',
     stack: 'C# WPF · .NET 8 · Claude API · DeepSeek · NVIDIA NIM · NAudio WASAPI · Whisper ONNX · AMD XDNA NPU',
-    impact: 'Invisible-to-screen-capture AI desktop assistant with multi-provider LLM fallback and on-device STT',
+    impact: 'Live-instruction copilot enabling educators to view real-time AI prompts and transcription during screen-sharing without audience clutter',
     bullets: [
-      'Stealth overlay: WDA_EXCLUDEFROMCAPTURE P/Invoke makes the window invisible to all screen recording and sharing software',
+      'Overlay isolation: WDA_EXCLUDEFROMCAPTURE P/Invoke keeps speaker notes private and invisible to meeting screenshares',
       'AI provider chain: Claude → DeepSeek → NVIDIA NIM → Groq → Ollama with automatic failover',
       'Hardware-optimized: Whisper STT on AMD XDNA NPU, embeddings on Radeon DirectML, VAD on CPU',
       'Hotkey-driven UX: Alt+Space (toggle), Ctrl+Space (explain last 30s), Alt+A (focus input)',
@@ -247,6 +247,16 @@ export const profile = {
   contactDesc:
     'Open to Forward Deployed Engineer (FDE), Applied AI Solutions Engineer, Full-Stack Developer, and Technical Enablement roles — especially in enterprise AI, SaaS, and EdTech domains.',
 };
+
+// ─── EDUCATION ────────────────────────────────────────────────────────────────
+
+export const education = [
+  {
+    degree: 'Bachelor of Technology (B.Tech) in Electronics and Communication Engineering',
+    institution: 'North East Christian University',
+    year: '2019',
+  },
+];
 
 // ─── AUTO-CALCULATED STATS ────────────────────────────────────────────────────
 // These values derive from your data above — no manual updates needed.

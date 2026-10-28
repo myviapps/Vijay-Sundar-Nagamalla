@@ -144,15 +144,22 @@ Free, open-source meeting transcriber that runs **100% locally on your machine**
 
 <br/>
 
-**Forward — AI Class Assistant (Desktop)** &nbsp; ![Local](https://img.shields.io/badge/Local_Install-8b949e?style=flat)<br/>
+**Forward — Non-Intrusive Presenter & Live-Instruction Copilot** &nbsp; ![Local](https://img.shields.io/badge/Local_Install-8b949e?style=flat)<br/>
 *C# WPF · .NET 8 · Claude API · DeepSeek · NVIDIA NIM · NAudio WASAPI · Whisper ONNX · AMD XDNA NPU*<br/>
-Invisible-to-screen-capture AI desktop assistant. Multi-provider AI fallback chain (Claude → DeepSeek → NVIDIA NIM → Groq → Ollama), Whisper STT on AMD XDNA NPU, Silero VAD, and hotkey-driven overlay UX.
+Non-intrusive live-instruction copilot allowing educators and speakers to view real-time AI notes and transcription while screen-sharing without audience clutter. Hardware-level window isolation via WDA_EXCLUDEFROMCAPTURE P/Invoke, multi-provider AI fallback chain (Claude → DeepSeek → NVIDIA NIM → Groq → Ollama), Whisper STT on AMD XDNA NPU, and hotkey-driven overlay UX.
 
 <br/>
 
 **[vijaysundar.dev — Personal Portfolio](https://vijaysundar.vercel.app)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
 *React 18 · Vite · Vanilla CSS · Vercel*<br/>
 Data-driven portfolio with auto-calculated stats, typewriter effects, and intersection observer scroll animations. Component-driven, SEO-optimised, mobile-first.
+
+---
+
+### ◈ EDUCATION
+
+**Bachelor of Technology (B.Tech) in Electronics & Communication Engineering**  
+*North East Christian University* &nbsp;·&nbsp; Graduated 2019
 
 ---
 
