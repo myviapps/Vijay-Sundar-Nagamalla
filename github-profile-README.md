@@ -2,11 +2,11 @@
 
 # Hi, I'm Vijay Sundar 👋
 
-<a href="https://github.com/myviapps"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=EdTech+Platform+Architect;Educator+%E2%86%92+Developer;Full-Stack+Engineer;Technical+Trainer+%E2%80%94+50K%2B+Learners" alt="Typing SVG" /></a>
+<a href="https://github.com/myviapps"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Forward+Deployed+Engineer+(FDE);AI+Application+Developer;Full-Stack+Engineer;Technical+Trainer+%E2%80%94+50K%2B+Learners" alt="Typing SVG" /></a>
 
 <br/>
 
-![Open to AI Roles](https://img.shields.io/badge/Open_to_AI_Roles-2ea44f?style=flat)
+![Open to FDE & AI Roles](https://img.shields.io/badge/Open_to_FDE_%26_AI_Roles-2ea44f?style=flat)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijaysundarn)
 &nbsp;
@@ -22,9 +22,9 @@
 
 ### ◈ MY STORY
 
-> From classroom to codebase — I spent **8+ years** training **50,000+ learners** across 40+ institutions in programming fundamentals, then taught myself to build the AI systems and EdTech platforms I once only *taught about*.
+> From classroom to codebase — I spent **8+ years** training **50,000+ learners** across 40+ institutions in programming fundamentals, while architecting the production AI systems and EdTech platforms I once only *taught about*.
 >
-> Today I architect **classroom analytics platforms**, **academic intelligence systems**, and **AI-powered desktop tools** for production use across EdTech, SaaS, and enterprise domains. I don't just understand AI — I've built it under real constraints, with real users.
+> Today I build **multi-platform classroom intelligence**, **academic operating systems**, and **on-device AI assistants** for production use. With a strong foundation in technical training and full-stack development (React 19, FastAPI, Docker, local AI inference), I target **Forward Deployed Engineering (FDE)** and **Applied AI** roles where deep engineering meets enterprise enablement.
 
 ---
 
@@ -114,15 +114,15 @@
 
 ### ◈ FEATURED PROJECTS
 
-**[Almaanac — Classroom Coding Analytics Platform](https://almaanac.vercel.app/)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
-*TanStack Start (React 19) · TanStack Router · TanStack Query v5 · Supabase · Tailwind CSS v4 · Recharts · TypeScript 5.8 · Vercel*<br/>
-Full-stack classroom analytics platform that monitors LeetCode activity across classrooms and cohorts. LeetCode GraphQL integration, behavioral leaderboards, heatmaps, 30-day trends, and automated refresh via Vercel cron + GitHub Actions.
+**[Almaanac — Multi-Platform Classroom Coding Intelligence](https://almaanac.vercel.app/)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
+*TanStack Start (React 19) · TanStack Router · TanStack Query v5 · Supabase (PostgreSQL/RLS) · Tailwind CSS v4 · Recharts · TypeScript 5.8 · Vercel*<br/>
+Full-stack classroom analytics platform monitoring competitive programming across **8 platforms**: LeetCode, Codeforces, AtCoder, GeeksforGeeks, HackerRank, CodeChef, HackerEarth, and Code360. Features independent async refresh workers, lease-based concurrency locking, difficulty-weighted scoring, 365-day heatmaps, and privacy-first masked public lookup.
 
 <br/>
 
-**Vukti — Unified Academic Intelligence Platform** &nbsp; ![In Dev](https://img.shields.io/badge/In_Development-f78166?style=flat)<br/>
-*React 19 · Vite 7 · TailwindCSS 4 · FastAPI · PostgreSQL 16 · Redis 7 · Docker · Judge0 · NVIDIA AI*<br/>
-9-module student operating system for technical education. Multi-platform coding sync (6 platforms), proctored assessment engine (MCQ + Coding + SQL), VIMY gamified practice (1,000+ problems, streaks, badges, leagues), attendance, semester engine, and placement pipeline.
+**Vukti — Unified Academic Intelligence Platform & Student OS** &nbsp; ![In Dev](https://img.shields.io/badge/In_Development-f78166?style=flat)<br/>
+*React 19.2 · Vite 7 · TailwindCSS 4 · FastAPI · SQLAlchemy 2 · PostgreSQL 16 · Redis 7 · Docker · Judge0 1.13.1 · Monaco Editor*<br/>
+9-module student operating system across Academics, Placements, and Growth for technical institutions (10,000 concurrent user scale). Performance tracking across 6 coding platforms with async orchestrator, examination engine (MCQ + Coding + SQL) with self-hosted Docker Judge0 (25+ languages), VIMY gamified practice (1,000+ problems, streaks, coins, 30 XP levels, Skill DNA), attendance tracking, and semester lifecycle management.
 
 <br/>
 
@@ -138,9 +138,9 @@ Bulk-scrape Salesforce Trailhead profiles from URLs or Excel uploads. Auto-detec
 
 <br/>
 
-**ILFU — AI Research Project** &nbsp; ![In Dev](https://img.shields.io/badge/In_Development-f78166?style=flat)<br/>
-*Python · AI/ML Stack*<br/>
-Experimental AI research and experimentation platform currently under active development.
+**[ILFU (I Listen For U) — Open-Source Local Video Call Transcriber](https://github.com/myviapps/I-L-F-U)** &nbsp; ![AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat) &nbsp; ![In Dev](https://img.shields.io/badge/In_Development-f78166?style=flat)<br/>
+*Python 3.11+ · faster-whisper · PyAudioWPatch (WASAPI) · whisper.cpp · Pytest · AGPL-3.0*<br/>
+Free, open-source meeting transcriber that runs **100% locally on your machine** with zero cloud API keys, no external accounts, and **NO bot joining your call**. Passive system audio loopback capture (Windows WASAPI) captures both mic and speaker seamlessly, on-device Whisper STT, open speaker diarization, and local LLM meeting summaries.
 
 <br/>
 

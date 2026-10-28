@@ -69,6 +69,8 @@
       border-bottom: 1.5px solid #000;
       padding-bottom: 2px;
       margin-bottom: 7px;
+      break-after: avoid;
+      page-break-after: avoid;
     }
 
     /* ── SUMMARY ─────────────────────────────── */
@@ -86,6 +88,8 @@
     /* ── EXPERIENCE ──────────────────────────── */
     .exp-item {
       margin-bottom: 9px;
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     .exp-top {
@@ -124,6 +128,8 @@
     /* ── PROJECTS ────────────────────────────── */
     .proj-item {
       margin-bottom: 8px;
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     .proj-top {
@@ -184,7 +190,7 @@
         <a href="https://vijaysundar.vercel.app">Portfolio</a>
       </div>
       <div class="titles">
-        AI Application Developer | Full Stack Engineer | Agentic Systems Architect
+        Forward Deployed Engineer (FDE) | AI Application Developer | Full Stack Engineer
       </div>
     </div>
 
@@ -192,11 +198,11 @@
     <div class="section">
       <div class="section-title">Professional Summary</div>
       <p class="summary">
-        Veteran L&D professional with 8+ years of experience delivering and operating high-scale technical training
-        programs. I have mentored 50,000+ learners in core programming (C, Java, Python, SQL, and DSA) across 40+
-        institutions while managing complex learning operations and LMS ecosystems. Driven by a passion for self-growth
-        and technological innovation, I also architect production-grade AI solutions, including RAG pipelines and
-        agentic frameworks, to solve real-world automation challenges.
+        Technical builder and L&D professional with 8+ years of experience delivering high-scale technical training
+        programs and managing learning operations. Mentored 50,000+ learners in core programming (C, Java, Python, SQL,
+        DSA) across 40+ institutions while operating LMS ecosystems. Proven track record architecting production platforms
+        (React 19, FastAPI, Docker, C#) and intelligent automation tools, targeting Forward Deployed Engineering (FDE)
+        and applied AI solutions.
       </p>
     </div>
 
@@ -227,8 +233,8 @@
         </div>
         <div class="exp-company">Freelance</div>
         <ul class="bullets">
-          <li>Architected and deployed 7+ end-to-end AI and full-stack platforms, including EdTech analytics
-            (Almaanac, Vukti), Salesforce tracking, and an AI-powered stealth desktop assistant (Forward)</li>
+          <li>Architected and deployed 7+ end-to-end AI and full-stack platforms, including multi-platform EdTech analytics
+            (Almaanac, Vukti), open-source AI meeting transcribers (ILFU), and stealth desktop assistants (Forward)</li>
           <li>Delivered high-impact technical training in Java, Python, SQL, and DSA to 25,000+ learners, achieving ~50%
             average assessment improvement</li>
           <li>Managed end-to-end learning operations: from multi-track session scheduling and batch planning to learner
@@ -283,28 +289,27 @@
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">Almaanac — Classroom Coding Analytics Platform</span>
+          <span class="proj-name">Almaanac — Multi-Platform Classroom Coding Intelligence</span>
           <a class="proj-link" href="https://almaanac.vercel.app/">Click here to open</a>
         </div>
-        <div class="proj-stack">TanStack Start (React 19), TanStack Router, TanStack Query v5, Supabase, Tailwind CSS v4, Recharts, TypeScript 5.8, Vercel</div>
+        <div class="proj-stack">TanStack Start (React 19), TanStack Router, TanStack Query v5, Supabase (PostgreSQL/RLS), Tailwind CSS v4, Recharts, TypeScript 5.8, Vercel</div>
         <ul class="bullets">
-          <li>Built a full-stack classroom analytics platform that monitors LeetCode activity across classrooms and cohorts for educators and placement officers</li>
-          <li>LeetCode GraphQL integration: scrapes solved counts, submission calendars, contest ratings, badges, and language stats with exponential backoff</li>
-          <li>Dashboards with leaderboards, behavioral buckets ("Active Today", "At Risk", "Top Performers"), heatmaps, 30-day trends, and difficulty-split charts</li>
-          <li>Automated refresh: daily Vercel cron + GitHub Actions pump with Postgres-level lease locking and rate-limited concurrency</li>
+          <li>Classroom analytics platform aggregating coding metrics across 8 platforms: LeetCode, Codeforces, AtCoder, GeeksforGeeks, HackerRank, CodeChef, HackerEarth, and Code360</li>
+          <li>Engineered independent async refresh workers with rate-limiting, lease-based Postgres locking, and failure isolation per platform</li>
+          <li>Delivered educator dashboards: difficulty-weighted scoring, leaderboards, behavioral cohorts ("Active Today", "At Risk"), 365-day heatmaps, and term-end PDF report rollups</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">Vukti — Unified Academic Intelligence Platform</span>
+          <span class="proj-name">Vukti — Unified Academic Intelligence Platform & Student OS</span>
         </div>
-        <div class="proj-stack">React 19, Vite 7, TailwindCSS 4, FastAPI, PostgreSQL 16, Redis 7, Docker, Judge0, NVIDIA AI</div>
+        <div class="proj-stack">React 19.2, Vite 7, TailwindCSS 4, FastAPI, SQLAlchemy 2, PostgreSQL 16, Redis 7, Docker, Judge0 1.13.1, Monaco Editor</div>
         <ul class="bullets">
-          <li>Architecting a 9-module student operating system for technical education (B2B + B2C), targeting 10,000 concurrent users</li>
-          <li>Multi-platform sync from 6 coding platforms (LeetCode, HackerRank, CodeChef, Codeforces, GFG, HackerEarth) with async scraper orchestrator</li>
-          <li>Assessment engine: MCQ + Coding + SQL with Docker-isolated Judge0 execution, full-screen proctoring, and tab-blur detection</li>
-          <li>VIMY gamified practice: 1,000+ problems, streaks, coins, XP levels, badges, leagues, and activity heatmaps</li>
+          <li>Architecting a 9-module student OS for technical institutions (B2B + B2C) across Academics, Placements, and Growth for 10,000 concurrent users</li>
+          <li>Multi-platform performance sync across 6 platforms (LeetCode, HackerRank, CodeChef, Codeforces, GFG, HackerEarth) with async worker pool</li>
+          <li>Full examination engine: MCQ + Coding + SQL testing with Docker-isolated Judge0 1.13.1 (25+ languages), SQL judge, and proctoring/tab-blur detection</li>
+          <li>VIMY gamified competitive coding: 1,000+ problems, Monaco editor, streaks, coins, 30 XP levels, leagues, heatmaps, and 12-domain visual Skill DNA</li>
         </ul>
       </div>
 
@@ -330,18 +335,20 @@
         <ul class="bullets">
           <li>133-topic interactive curriculum for Forward Deployed Engineering with animated SVG flow diagrams, case studies, and 11 hands-on projects</li>
           <li>Step-by-step narration with code highlighting, playback controls, interactive quizzes, and fill-in templates</li>
-          <li>Covers RAG pipelines, tool calling, agentic loops, case decomposition — all progress tracked via localStorage</li>
+          <li>Covers RAG pipelines, tool calling, autonomous workflows, case decomposition — all progress tracked via localStorage</li>
         </ul>
       </div>
 
       <div class="proj-item">
         <div class="proj-top">
-          <span class="proj-name">ILFU — AI Research Project</span>
+          <span class="proj-name">ILFU (I Listen For U) — Open-Source Local Video Call Transcriber</span>
           <a class="proj-link" href="https://github.com/myviapps/I-L-F-U">GitHub</a>
         </div>
-        <div class="proj-stack">Python, AI/ML Stack</div>
+        <div class="proj-stack">Python 3.11+, faster-whisper, PyAudioWPatch (WASAPI), whisper.cpp, Pytest, AGPL-3.0</div>
         <ul class="bullets">
-          <li>Experimental AI research and experimentation platform currently under active development</li>
+          <li>Free, open-source meeting transcriber running 100% locally on device with zero API keys, no accounts, and NO bot joining the call</li>
+          <li>Engineered passive system audio loopback capture (WASAPI / PyAudioWPatch) to record microphone and speaker audio without call interference</li>
+          <li>Integrated faster-whisper & whisper.cpp for on-device STT, open speaker diarization, and local LLM summarization with capped CPU/memory usage</li>
         </ul>
       </div>
 
@@ -362,16 +369,11 @@
     <!-- CORE COMPETENCIES -->
     <div class="section">
       <div class="section-title">Core Competencies</div>
-      <div class="comp-row"><strong>AI & Desktop Engineering:</strong> Claude/DeepSeek/NVIDIA NIM integration, Whisper STT,
-        on-device AI, stealth desktop UX</div>
-      <div class="comp-row"><strong>Full Stack Engineering:</strong> React 19, TanStack Start, FastAPI, PostgreSQL, Docker,
-        C# WPF / .NET 8</div>
-      <div class="comp-row"><strong>EdTech Platforms:</strong> Classroom analytics, assessment engines, multi-platform coding
-        trackers, gamified learning</div>
-      <div class="comp-row"><strong>Technical Training:</strong> Java, Python, SQL, DSA, 50,000+ learners trained across
-        40+ colleges</div>
-      <div class="comp-row"><strong>Learning Operations:</strong> LMS, KPI Reporting, Stakeholder Management, Curriculum
-        Design</div>
+      <div class="comp-row"><strong>AI & Desktop Engineering:</strong> Claude/DeepSeek/NVIDIA NIM, Whisper STT, on-device AI, stealth desktop UX</div>
+      <div class="comp-row"><strong>Full Stack Engineering:</strong> React 19, TanStack Start, FastAPI, PostgreSQL, Docker, C# WPF / .NET 8</div>
+      <div class="comp-row"><strong>EdTech Platforms:</strong> Classroom analytics, assessment engines, multi-platform coding trackers, gamified learning</div>
+      <div class="comp-row"><strong>Technical Training:</strong> Java, Python, SQL, DSA, 50,000+ learners trained across 40+ colleges</div>
+      <div class="comp-row"><strong>Learning Operations:</strong> LMS, KPI Reporting, Stakeholder Management, Curriculum Design</div>
     </div>
 
   </div>
