@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 875" width="1400" height="875" role="img" aria-label="Forward settings: AI provider failover chain, devices, transparency and profile">
+<!-- UI mockup of Forward's SettingsWindow. Section names, field labels and
+     palette follow the real SettingsWindow.xaml. Not a capture. -->
+<defs>
+  <linearGradient id="fs-mark" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#CACACA"/><stop offset=".4" stop-color="#929292"/>
+    <stop offset=".72" stop-color="#757575"/><stop offset="1" stop-color="#666"/>
+  </linearGradient>
+  <style>
+    .m { font-family: Consolas, 'Cascadia Mono', ui-monospace, monospace; }
+    .s { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .lbl { font-size: 11px; letter-spacing: 1.6px; }
+  </style>
+</defs>
+
+<rect width="1400" height="875" fill="#151518"/>
+<rect x="40" y="36" width="1320" height="804" rx="12" fill="#212121" stroke="#ffffff" stroke-opacity=".1"/>
+
+<!-- title bar -->
+<path d="M40 48a12 12 0 0 1 12-12h1296a12 12 0 0 1 12 12v34H40z" fill="#1C1F26"/>
+<g transform="translate(60,46) scale(0.17)">
+  <polyline points="24,34 42,90 60,54 78,90 96,34" fill="none" stroke="url(#fs-mark)" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M97,12 L100.5,25 L114,29 L100.5,33 L97,46 L93.5,33 L80,29 L93.5,25 Z" fill="url(#fs-mark)"/>
+</g>
+<text class="m" x="86" y="68" fill="#E8E8EC" font-size="13">⚙  Forward Settings</text>
+<text class="m" x="1250" y="68" fill="#8fd49b" font-size="11" text-anchor="end">🕶 Stealth is always on</text>
+<text class="m" x="1330" y="68" fill="#A6A6A6" font-size="13" text-anchor="end">✕</text>
+
+<!-- ── AI CHAT PROVIDERS ─────────────────────────────────────────── -->
+<text class="m lbl" x="72" y="128" fill="#77CDCDCD">AI CHAT PROVIDERS</text>
+<text class="m" x="690" y="128" fill="#55BCBCBC" font-size="11" text-anchor="end">failover order · drag to reorder</text>
+<rect x="72" y="142" width="618" height="1" fill="#fff" fill-opacity=".08"/>
+
+<g>
+  <rect x="72" y="158" width="618" height="52" rx="8" fill="#FFFFFF" fill-opacity=".09" stroke="#3a7d4f"/>
+  <text class="m" x="92" y="190" fill="#55FFFFFF" font-size="12">⠿ 1</text>
+  <text class="s" x="132" y="182" fill="#EEFFFFFF" font-size="15" font-weight="600">Claude</text>
+  <text class="m" x="132" y="200" fill="#77CDCDCD" font-size="11">claude-opus-5 · api.anthropic.com</text>
+  <circle cx="614" cy="184" r="4" fill="#8fd49b"/>
+  <text class="m" x="628" y="188" fill="#8fd49b" font-size="11">active</text>
+</g>
+<g>
+  <rect x="72" y="218" width="618" height="52" rx="8" fill="#FFFFFF" fill-opacity=".05"/>
+  <text class="m" x="92" y="250" fill="#44FFFFFF" font-size="12">⠿ 2</text>
+  <text class="s" x="132" y="242" fill="#DDFFFFFF" font-size="15">DeepSeek</text>
+  <text class="m" x="132" y="260" fill="#66FFFFFF" font-size="11">deepseek-chat · api.deepseek.com</text>
+  <text class="m" x="648" y="248" fill="#77CDCDCD" font-size="11" text-anchor="end">standby</text>
+</g>
+<g>
+  <rect x="72" y="278" width="618" height="52" rx="8" fill="#FFFFFF" fill-opacity=".05"/>
+  <text class="m" x="92" y="310" fill="#44FFFFFF" font-size="12">⠿ 3</text>
+  <text class="s" x="132" y="302" fill="#DDFFFFFF" font-size="15">NVIDIA NIM</text>
+  <text class="m" x="132" y="320" fill="#66FFFFFF" font-size="11">integrate.api.nvidia.com</text>
+  <text class="m" x="648" y="308" fill="#77CDCDCD" font-size="11" text-anchor="end">standby</text>
+</g>
+<g>
+  <rect x="72" y="338" width="618" height="52" rx="8" fill="#FFFFFF" fill-opacity=".05"/>
+  <text class="m" x="92" y="370" fill="#44FFFFFF" font-size="12">⠿ 4</text>
+  <text class="s" x="132" y="362" fill="#DDFFFFFF" font-size="15">Groq</text>
+  <text class="m" x="132" y="380" fill="#66FFFFFF" font-size="11">llama-3.3-70b · api.groq.com</text>
+  <text class="m" x="648" y="368" fill="#77CDCDCD" font-size="11" text-anchor="end">standby</text>
+</g>
+<g>
+  <rect x="72" y="398" width="618" height="52" rx="8" fill="#FFFFFF" fill-opacity=".05"/>
+  <text class="m" x="92" y="430" fill="#44FFFFFF" font-size="12">⠿ 5</text>
+  <text class="s" x="132" y="422" fill="#DDFFFFFF" font-size="15">Ollama</text>
+  <text class="m" x="132" y="440" fill="#66FFFFFF" font-size="11">qwen2.5:14b · 127.0.0.1:11434 · offline</text>
+  <text class="m" x="648" y="428" fill="#77CDCDCD" font-size="11" text-anchor="end">standby</text>
+</g>
+
+<!-- ── PROVIDER DETAILS ──────────────────────────────────────────── -->
+<text class="m lbl" x="72" y="500" fill="#77CDCDCD">PROVIDER DETAILS</text>
+<rect x="72" y="514" width="618" height="1" fill="#fff" fill-opacity=".08"/>
+<g class="m" font-size="11" fill="#66FFFFFF">
+  <text x="72" y="542">Name  ·  e.g. 'Nvidia DeepSeek'</text>
+  <text x="394" y="542">Model ID</text>
+</g>
+<rect x="72" y="552" width="300" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="86" y="574" fill="#E8E8EC" font-size="14">Claude</text>
+<rect x="390" y="552" width="300" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="404" y="574" fill="#E8E8EC" font-size="14">claude-opus-5</text>
+
+<g class="m" font-size="11" fill="#66FFFFFF">
+  <text x="72" y="616">API Key</text>
+  <text x="394" y="616">Base URL  ·  (Ollama only)</text>
+</g>
+<rect x="72" y="626" width="300" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="m" x="86" y="648" fill="#A6A6A6" font-size="14">••••••••••••••••••••••</text>
+<rect x="390" y="626" width="220" height="34" rx="6" fill="#FFFFFF" fill-opacity=".04"/>
+<text class="s" x="404" y="648" fill="#4DFFFFFF" font-size="14">—</text>
+<rect x="622" y="626" width="68" height="34" rx="6" fill="#FFFFFF" fill-opacity=".12"/>
+<text class="m" x="656" y="648" fill="#E8E8EC" font-size="12" text-anchor="middle">TEST</text>
+
+<!-- ── right column ──────────────────────────────────────────────── -->
+<rect x="724" y="112" width="1" height="700" fill="#fff" fill-opacity=".07"/>
+
+<text class="m lbl" x="756" y="128" fill="#77CDCDCD">DEVICES</text>
+<rect x="756" y="142" width="572" height="1" fill="#fff" fill-opacity=".08"/>
+<text class="m" x="756" y="172" fill="#66FFFFFF" font-size="11">Output to loop back  ·  interviewer's audio</text>
+<rect x="756" y="182" width="572" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="770" y="204" fill="#E8E8EC" font-size="14">Speakers (Realtek(R) Audio)  —  WASAPI loopback</text>
+<text class="m" x="1314" y="204" fill="#A6A6A6" font-size="12" text-anchor="end">▾</text>
+
+<text class="m" x="756" y="248" fill="#66FFFFFF" font-size="11">Microphone  ·  your voice</text>
+<rect x="756" y="258" width="572" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="770" y="280" fill="#E8E8EC" font-size="14">Microphone Array (Intel® Smart Sound)</text>
+<text class="m" x="1314" y="280" fill="#A6A6A6" font-size="12" text-anchor="end">▾</text>
+
+<text class="m" x="756" y="320" fill="#55BCBCBC" font-size="11">Speak for 3 seconds to check your mic</text>
+<g>
+  <rect x="756" y="330" width="460" height="10" rx="5" fill="#FFFFFF" fill-opacity=".07"/>
+  <rect x="756" y="330" width="286" height="10" rx="5" fill="#8fd49b" fill-opacity=".65"/>
+  <rect x="1232" y="326" width="96" height="18" rx="5" fill="#FFFFFF" fill-opacity=".1"/>
+  <text class="m" x="1280" y="339" fill="#E8E8EC" font-size="11" text-anchor="middle">TEST</text>
+</g>
+
+<text class="m lbl" x="756" y="394" fill="#77CDCDCD">TRANSPARENCY</text>
+<rect x="756" y="408" width="572" height="1" fill="#fff" fill-opacity=".08"/>
+<text class="m" x="756" y="438" fill="#66FFFFFF" font-size="11">Panel transparency</text>
+<text class="m" x="1328" y="438" fill="#E8E8EC" font-size="11" text-anchor="end">55%</text>
+<rect x="756" y="452" width="572" height="4" rx="2" fill="#FFFFFF" fill-opacity=".12"/>
+<rect x="756" y="452" width="315" height="4" rx="2" fill="#A6A6A6"/>
+<circle cx="1071" cy="454" r="9" fill="#E8E8EC"/>
+<g class="m" font-size="11" fill="#55BCBCBC">
+  <text x="756" y="480">See-through</text>
+  <text x="1328" y="480" text-anchor="end">Solid</text>
+</g>
+
+<text class="m lbl" x="756" y="536" fill="#77CDCDCD">ABOUT YOU</text>
+<rect x="756" y="550" width="572" height="1" fill="#fff" fill-opacity=".08"/>
+<text class="m" x="756" y="580" fill="#66FFFFFF" font-size="11">Your name  ·  used in first-person answers</text>
+<rect x="756" y="590" width="572" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="770" y="612" fill="#E8E8EC" font-size="14">Vijay Sundar Nagamalla</text>
+
+<text class="m" x="756" y="654" fill="#66FFFFFF" font-size="11">Résumé  ·  PDF, DOCX, txt, md</text>
+<rect x="756" y="664" width="572" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="770" y="686" fill="#E8E8EC" font-size="14">Vijay_Sundar_Nagamalla_Resume.pdf</text>
+<text class="m" x="1314" y="686" fill="#8fd49b" font-size="11" text-anchor="end">indexed</text>
+
+<text class="m lbl" x="756" y="730" fill="#77CDCDCD">CLASS / DOC FOLDER</text>
+<rect x="756" y="744" width="572" height="1" fill="#fff" fill-opacity=".08"/>
+<text class="m" x="756" y="774" fill="#66FFFFFF" font-size="11">Watch folder  ·  auto-indexed on start</text>
+<rect x="756" y="784" width="572" height="34" rx="6" fill="#FFFFFF" fill-opacity=".07"/>
+<text class="s" x="770" y="806" fill="#E8E8EC" font-size="14">D:\Sessions\Java-DSA-Batch-7</text>
+<text class="m" x="1314" y="806" fill="#77CDCDCD" font-size="11" text-anchor="end">42 files</text>
+</svg>

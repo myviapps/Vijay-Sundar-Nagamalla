@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 875" width="1400" height="875" role="img" aria-label="ILFU capturing a call locally: WASAPI loopback, on-device Whisper, live diarized transcript">
+<!-- UI mockup of ILFU (Python CLI). Built from the project's documented
+     pipeline — WASAPI loopback, faster-whisper, local diarization. Not a capture. -->
+<defs><style>
+  .m { font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace; font-size: 16px; }
+  .sm { font-size: 13px; }
+</style></defs>
+
+<rect width="1400" height="875" fill="#070a0e"/>
+<rect x="36" y="32" width="1328" height="811" rx="10" fill="#0c0f14" stroke="#1d2530"/>
+
+<!-- window chrome -->
+<path d="M36 42a10 10 0 0 1 10-10h1308a10 10 0 0 1 10 10v30H36z" fill="#151a21"/>
+<g fill="#2b3442"><circle cx="62" cy="52" r="6"/><circle cx="82" cy="52" r="6"/><circle cx="102" cy="52" r="6"/></g>
+<text class="m sm" x="700" y="57" fill="#6e7a8a" text-anchor="middle">ilfu — listen — 142×44</text>
+<rect x="36" y="72" width="1328" height="1" fill="#1d2530"/>
+
+<!-- command -->
+<text class="m" x="64" y="116" fill="#7ee787">$</text>
+<text class="m" x="88" y="116" fill="#d6dde7">ilfu listen --device loopback --model small.en --diarize</text>
+
+<!-- banner -->
+<text class="m" x="64" y="162" fill="#79c0ff" font-size="19" letter-spacing="3">I·L·F·U</text>
+<text class="m" x="212" y="162" fill="#6e7a8a">i listen for u</text>
+<text class="m sm" x="1332" y="162" fill="#4d5868" text-anchor="end">v0.4.2 · AGPL-3.0</text>
+<rect x="64" y="178" width="1268" height="1" fill="#1a222c"/>
+
+<!-- preflight -->
+<g class="m">
+  <text x="64" y="214" fill="#7ee787">✓</text><text x="96" y="214" fill="#6e7a8a">audio    </text>
+  <text x="236" y="214" fill="#d6dde7">WASAPI loopback</text><text x="440" y="214" fill="#8b97a7">"Speakers (Realtek Audio)"  48 kHz · 2ch</text>
+
+  <text x="64" y="244" fill="#7ee787">✓</text><text x="96" y="244" fill="#6e7a8a">model    </text>
+  <text x="236" y="244" fill="#d6dde7">faster-whisper small.en</text><text x="540" y="244" fill="#8b97a7">int8 · 466 MB · cached locally</text>
+
+  <text x="64" y="274" fill="#7ee787">✓</text><text x="96" y="274" fill="#6e7a8a">diarize  </text>
+  <text x="236" y="274" fill="#d6dde7">segmentation-3.0</text><text x="460" y="274" fill="#8b97a7">2 speakers detected</text>
+
+  <text x="64" y="304" fill="#7ee787">✓</text><text x="96" y="304" fill="#6e7a8a">network  </text>
+  <text x="236" y="304" fill="#e3b341">0 requests</text><text x="376" y="304" fill="#8b97a7">— no API key, no bot in the call, nothing leaves this machine</text>
+</g>
+
+<!-- transcript header -->
+<text class="m sm" x="64" y="356" fill="#4d5868">── transcript ──────────────────────────────────────────────────────────────── 00:12:41 ──</text>
+
+<!-- transcript lines -->
+<g class="m">
+  <text x="64" y="398" fill="#4d5868">00:11:46</text>
+  <text x="196" y="398" fill="#d2a8ff">SPEAKER_00</text>
+  <text x="352" y="398" fill="#aab6c4">ok so each platform syncs on its own worker, right?</text>
+
+  <text x="64" y="436" fill="#4d5868">00:11:58</text>
+  <text x="196" y="436" fill="#79c0ff">SPEAKER_01</text>
+  <text x="352" y="436" fill="#d6dde7">yes — and the adapter has to be idempotent, otherwise a</text>
+  <text x="352" y="462" fill="#d6dde7">retry double-counts the submissions.</text>
+
+  <text x="64" y="500" fill="#4d5868">00:12:07</text>
+  <text x="196" y="500" fill="#d2a8ff">SPEAKER_00</text>
+  <text x="352" y="500" fill="#aab6c4">right. do we take the lease per platform or per classroom?</text>
+
+  <text x="64" y="538" fill="#4d5868">00:12:19</text>
+  <text x="196" y="538" fill="#79c0ff">SPEAKER_01</text>
+  <text x="352" y="538" fill="#d6dde7">per platform. a slow LeetCode pull shouldn't block the</text>
+  <text x="352" y="564" fill="#d6dde7">Codeforces one — failure isolation is the whole point.</text>
+
+  <text x="64" y="602" fill="#4d5868">00:12:34</text>
+  <text x="196" y="602" fill="#d2a8ff">SPEAKER_00</text>
+  <text x="352" y="602" fill="#aab6c4">makes sense. i'll write that into the adapter contract</text>
+</g>
+<rect x="352" y="624" width="9" height="18" fill="#7ee787"/>
+
+<!-- live meters -->
+<g opacity=".85">
+  <rect x="64" y="690" width="3" height="10" fill="#79c0ff"/><rect x="71" y="684" width="3" height="22" fill="#79c0ff"/>
+  <rect x="78" y="688" width="3" height="14" fill="#79c0ff"/><rect x="85" y="680" width="3" height="30" fill="#79c0ff"/>
+  <rect x="92" y="686" width="3" height="18" fill="#79c0ff"/><rect x="99" y="692" width="3" height="6" fill="#79c0ff"/>
+  <rect x="106" y="683" width="3" height="24" fill="#79c0ff"/><rect x="113" y="689" width="3" height="12" fill="#79c0ff"/>
+  <rect x="120" y="685" width="3" height="20" fill="#79c0ff"/><rect x="127" y="691" width="3" height="8" fill="#79c0ff"/>
+</g>
+<text class="m sm" x="150" y="700" fill="#6e7a8a">loopback</text>
+<g opacity=".55">
+  <rect x="244" y="692" width="3" height="6" fill="#d2a8ff"/><rect x="251" y="688" width="3" height="14" fill="#d2a8ff"/>
+  <rect x="258" y="694" width="3" height="4" fill="#d2a8ff"/><rect x="265" y="690" width="3" height="10" fill="#d2a8ff"/>
+  <rect x="272" y="693" width="3" height="5" fill="#d2a8ff"/>
+</g>
+<text class="m sm" x="292" y="700" fill="#6e7a8a">mic</text>
+
+<rect x="64" y="736" width="1268" height="1" fill="#1a222c"/>
+
+<!-- status bar -->
+<g class="m sm">
+  <text x="64" y="768" fill="#7ee787">14.2x realtime</text>
+  <text x="232" y="768" fill="#6e7a8a">1.8 GB RAM</text>
+  <text x="368" y="768" fill="#6e7a8a">cpu 31%</text>
+  <text x="472" y="768" fill="#6e7a8a">vad: silero</text>
+  <text x="604" y="768" fill="#6e7a8a">buffer 0.6s</text>
+  <text x="1332" y="768" fill="#4d5868" text-anchor="end">^C stop   s summary   e export .srt</text>
+</g>
+<g class="m sm">
+  <text x="64" y="804" fill="#4d5868">writing</text>
+  <text x="168" y="804" fill="#8b97a7">~/.ilfu/sessions/2026-10-28T14-02.jsonl</text>
+  <text x="1332" y="804" fill="#4d5868" text-anchor="end">offline · on-device · AGPL-3.0</text>
+</g>
+</svg>
