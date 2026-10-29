@@ -26,6 +26,7 @@ build/
 
 # AI / Agent tools
 .claude/
+.codex/
 .playwright-mcp/
 .superpowers/
 
