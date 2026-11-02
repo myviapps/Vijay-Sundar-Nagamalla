@@ -586,8 +586,8 @@ export default function Story() {
                 In use <i style={{ color: '#ff7a3d' }}>today.</i>
               </h2>
               <p className="st-dep-lede">
-                Tools running now, from classroom analytics and Salesforce tracking to open-source
-                local AI. Keep scrolling →
+                Tools running now, from academic intelligence and classroom analytics to Salesforce
+                tracking and local AI. Keep scrolling →
               </p>
             </div>
 

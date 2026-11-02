@@ -120,7 +120,7 @@ Full-stack classroom analytics platform monitoring competitive programming acros
 
 <br/>
 
-**Vukti — Unified Academic Intelligence Platform & Student OS** &nbsp; ![In Dev](https://img.shields.io/badge/In_Development-f78166?style=flat)<br/>
+**[Vukti — Unified Academic Intelligence Platform & Student OS](https://vukti.in)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
 *React 19.2 · Vite 7 · TailwindCSS 4 · FastAPI · SQLAlchemy 2 · PostgreSQL 16 · Redis 7 · Docker · Judge0 1.13.1 · Monaco Editor*<br/>
 9-module student operating system across Academics, Placements, and Growth for technical institutions (10,000 concurrent user scale). Performance tracking across 6 coding platforms with async orchestrator, examination engine (MCQ + Coding + SQL) with self-hosted Docker Judge0 (25+ languages), VIMY gamified practice (1,000+ problems, streaks, coins, 30 XP levels, Skill DNA), attendance tracking, and semester lifecycle management.
 

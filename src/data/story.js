@@ -36,7 +36,7 @@ export const storyProjects = {
   vukti: {
     name: 'Vukti',
     tag: 'Unified academic intelligence platform and Student OS',
-    status: 'In development',
+    status: 'Deployed',
     title: 'Vukti',
     impact:
       'End-to-end student operating system across Academics, Placements, and Growth: 9 modules targeting 10,000 concurrent users.',
@@ -48,6 +48,8 @@ export const storyProjects = {
       'VIMY gamified competitive coding: 1,000+ problems, split-pane Monaco IDE, streaks, coins, 30 XP levels, badges, leagues, and 12-domain Skill DNA',
       'Integrated academic ops: Learn Now structured paths, attendance tracking (QR/self-mark/manual), institutional tasks, and semester lifecycle engine',
     ],
+    link: 'https://vukti.in',
+    embed: 'https://vukti.in',
     shots: ['/images/shots/vukti-home.webp', '/images/shots/vukti-vimy.webp'],
   },
 
@@ -125,9 +127,9 @@ export const storyProjects = {
   },
 };
 
-// Chapter 02 stacks these three; chapter 03 scrolls horizontally through these four.
+// Chapter 02 stacks these three; chapter 03 scrolls horizontally through these live deployments.
 export const storyBuilds = ['almaanac', 'vukti', 'forward'];
-export const storyDeploys = ['almaanac', 'salesforce', 'fde', 'ilfu'];
+export const storyDeploys = ['vukti', 'almaanac', 'salesforce', 'fde', 'ilfu'];
 
 export const milestones = [
   {

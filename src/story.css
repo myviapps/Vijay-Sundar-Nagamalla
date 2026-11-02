@@ -471,7 +471,7 @@ a:hover { opacity: 0.75; }
 }
 
 /* ── CHAPTER 03 · DEPLOY (horizontal scroll) ────────────────────────────── */
-.st-dep { height: 340vh; position: relative; }
+.st-dep { height: 400vh; position: relative; }
 
 .st-dep-sticky {
   position: sticky;
@@ -815,7 +815,7 @@ a:hover { opacity: 0.75; }
   .st-proj-sticky { grid-template-columns: 1fr; gap: 4vh; align-content: center; }
   .st-proj-impact { max-width: none; }
 
-  .st-dep { height: 300vh; }
+  .st-dep { height: 350vh; }
   .st-dep-intro { flex-basis: 70vw; }
   .st-dep-card { flex-basis: 76vw; }
 
