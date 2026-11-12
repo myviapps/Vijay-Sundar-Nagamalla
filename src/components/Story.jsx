@@ -416,7 +416,7 @@ export default function Story() {
       {/* ── HERO ─────────────────────────────────────────────────────── */}
       <section className="st-hero">
         <div className="st-hero-inner" ref={heroRef}>
-          <div className="st-hero-eyebrow">Open to FDE &amp; Applied AI roles</div>
+          <div className="st-hero-eyebrow">Open to Forward Deployed Engineer &amp; Technical Enablement roles</div>
           <h1 className="st-hero-h1">
             <span className="st-hero-line">
               <span className="st-rise">Vijay Sundar</span>

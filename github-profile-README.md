@@ -2,15 +2,15 @@
 
 # Hi, I'm Vijay Sundar 👋
 
-<a href="https://github.com/myviapps"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Forward+Deployed+Engineer+(FDE);AI+Application+Developer;Full-Stack+Engineer;Technical+Trainer+%E2%80%94+50K%2B+Learners" alt="Typing SVG" /></a>
+<a href="https://github.com/myviapps"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Forward+Deployed+Engineer+(FDE);Technical+Enablement+Engineer;AI+Application+Developer;Technical+Trainer+%E2%80%94+50K%2B+Learners" alt="Typing SVG" /></a>
 
 <br/>
 
-![Open to FDE & AI Roles](https://img.shields.io/badge/Open_to_FDE_%26_AI_Roles-2ea44f?style=flat)
+![Open to FDE Roles](https://img.shields.io/badge/Open_to_FDE_Roles-2ea44f?style=flat)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijaysundarn)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat&logo=google-chrome&logoColor=white)](https://vijaysundar.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat&logo=google-chrome&logoColor=white)](https://vijay-sundar-nagamalla.vercel.app)
 &nbsp;
 [![Book a Call](https://img.shields.io/badge/Book_a_Call-7C3AED?style=flat&logo=googlecalendar&logoColor=white)](https://cal.com/vijay-sundar-nagumalla)
 &nbsp;
@@ -24,7 +24,7 @@
 
 > From classroom to codebase — I spent **8+ years** training **50,000+ learners** across 40+ institutions in programming fundamentals, while architecting the production AI systems and EdTech platforms I once only *taught about*.
 >
-> Today I build **multi-platform classroom intelligence**, **academic operating systems**, and **on-device AI assistants** for production use. With a strong foundation in technical training and full-stack development (React 19, FastAPI, Docker, local AI inference), I target **Forward Deployed Engineering (FDE)** and **Applied AI** roles where deep engineering meets enterprise enablement.
+> Today I build **multi-platform classroom intelligence**, **academic operating systems**, and **on-device AI assistants** for production use. With a strong foundation in technical training and full-stack development (React 19, FastAPI, Docker, local AI inference), I target **Forward Deployed Engineer** and **Technical Enablement** roles where working code and clear client enablement matter equally.
 
 ---
 
@@ -56,7 +56,7 @@
   <tr>
     <td width="50%" valign="top">
       <strong>AI & Desktop Engineering</strong><br/>
-      Claude/DeepSeek/NVIDIA NIM chains · Whisper STT on NPU · stealth overlay UX
+      Claude/DeepSeek/NVIDIA NIM chains · Whisper STT on NPU · presenter-notes overlay
     </td>
     <td width="50%" valign="top">
       <strong>Interactive Learning</strong><br/>
@@ -150,7 +150,7 @@ Non-intrusive live-instruction copilot allowing educators and speakers to view r
 
 <br/>
 
-**[vijaysundar.dev — Personal Portfolio](https://vijaysundar.vercel.app)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
+**[Personal Portfolio](https://vijay-sundar-nagamalla.vercel.app)** &nbsp; ![Live](https://img.shields.io/badge/Live-2ea44f?style=flat)<br/>
 *React 18 · Vite · Vanilla CSS · Vercel*<br/>
 Data-driven portfolio with auto-calculated stats, typewriter effects, and intersection observer scroll animations. Component-driven, SEO-optimised, mobile-first.
 
@@ -167,7 +167,7 @@ Data-driven portfolio with auto-calculated stats, typewriter effects, and inters
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijaysundarn)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://vijaysundar.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://vijay-sundar-nagamalla.vercel.app)
 &nbsp;
 [![Book a Call](https://img.shields.io/badge/Book_a_Call-7C3AED?style=for-the-badge&logo=googlecalendar&logoColor=white)](https://cal.com/vijay-sundar-nagumalla)
 &nbsp;

@@ -21,7 +21,7 @@ export const experience = [
     title: 'Senior Technical Trainer & Learning Operations / AI Developer',
     company: 'Freelance',
     bullets: [
-      'Architected and deployed 7+ end-to-end AI and full-stack platforms, including EdTech analytics (Almaanac, Vukti), Salesforce tracking, and an AI-powered stealth desktop assistant (Forward)',
+      'Architected and deployed 7+ end-to-end AI and full-stack platforms, including EdTech analytics (Almaanac, Vukti), Salesforce tracking, and a presenter copilot for live teaching (Forward)',
       'Delivered high-impact technical training in Java, Python, SQL, and DSA to 25,000+ learners, achieving ~50% average assessment improvement',
       'Managed end-to-end learning operations: from multi-track session scheduling and batch planning to learner enrollment and attendance tracking',
       'Partnered with instructional designers and stakeholders to ensure seamless program execution and on-time delivery of learning modules',
@@ -176,7 +176,7 @@ export const projects = [
     badge: '🎨 Developer Portfolio',
     status: 'deployed',
     statusLabel: 'Deployed',
-    title: 'Personal Portfolio — vijaysundar.dev',
+    title: 'Personal Portfolio',
     stack: 'React 18 · Vite · Vanilla CSS · Vercel',
     impact: 'Responsive developer portfolio with scroll animations & dynamic data',
     bullets: [
@@ -185,7 +185,7 @@ export const projects = [
       'Typewriter effect, intersection observer animations, animated counters',
       'SEO-optimized, mobile-first, Vercel-deployed',
     ],
-    link: '#',
+    link: 'https://vijay-sundar-nagamalla.vercel.app/',
   },
 ];
 
@@ -231,21 +231,21 @@ export const profile = {
   heroImage: '/images/ai_trainer_hero_isometric-Photoroom.png',
   typedPhrases: [
     'Forward Deployed Engineer (FDE)',
+    'Technical Enablement Engineer',
     'AI Application Developer',
-    'Full-Stack Solutions Engineer',
-    'Technical Trainer & Operations Leader',
+    'Technical Trainer',
   ],
-  availabilityBadge: 'Open to FDE & Applied AI Roles',
+  availabilityBadge: 'Open to Forward Deployed Engineer & Technical Enablement Roles',
   headline1: "Hi, I'm",
   headlineGrad: 'Vijay Sundar Nagamalla',
-  headline2: 'Forward Deployed Engineer & AI Developer',
+  headline2: 'Forward Deployed Engineer & Technical Enablement',
   description:
-    'Technical builder and L&D professional with 8+ years of experience delivering high-scale technical training programs and operating LMS ecosystems. Having mentored 50,000+ learners and architected 7+ production platforms (React 19, FastAPI, Docker, on-device AI), I combine software engineering with client enablement, targeting Forward Deployed Engineering (FDE) and applied AI roles.',
-  tags: ['Forward Deployed Engineering', 'Applied AI Solutions', 'EdTech Platforms', 'React 19', 'FastAPI', 'TanStack Start', 'Docker', 'PostgreSQL', 'C# / WPF'],
+    'Technical educator and developer with 8+ years of teaching programming to 50,000+ learners across 40+ institutions. I now build the kind of software I teach: AI and full-stack applications covering RAG, tool calling, on-device speech-to-text, and classroom analytics (React, FastAPI, PostgreSQL, Docker).',
+  tags: ['Forward Deployed Engineering', 'Technical Enablement', 'EdTech Platforms', 'React 19', 'FastAPI', 'TanStack Start', 'Docker', 'PostgreSQL', 'C# / WPF'],
   navbarCta: 'Book a Call',
   contactCta: "Let's Build Something Together",
   contactDesc:
-    'Open to Forward Deployed Engineer (FDE), Applied AI Solutions Engineer, Full-Stack Developer, and Technical Enablement roles — especially in enterprise AI, SaaS, and EdTech domains.',
+    'Open to Forward Deployed Engineer, AI Solutions Engineer, and Technical Enablement roles, especially at AI, SaaS, and EdTech companies.',
 };
 
 // ─── EDUCATION ────────────────────────────────────────────────────────────────
